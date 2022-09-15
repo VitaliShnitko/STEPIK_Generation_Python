@@ -23,10 +23,14 @@
 
 # Напишите программу, вычисляющую объём куба и площадь его полной поверхности, по введённому значению длины ребра.
 
-storona = int(input())
-v = storona * storona * storona
-s = 6 * (storona * storona)
-print('Объем =', v)
-print('Площадь полной поверхности =', s)
+# storona = int(input())
+# v = storona * storona * storona
+# s = 6 * (storona * storona)
+# print('Объем =', v)
+# print('Площадь полной поверхности =', s)
+
+
+
+
 
 
