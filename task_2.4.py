@@ -13,11 +13,20 @@
 # Напишите программу, которая считывает три целых числа и выводит на экран их сумму.
 # Каждое число записано в отдельной строке.
 
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+#
+# summ = num1 + num2 + num3
+# print(summ)
 
-summ = num1 + num2 + num3
-print(summ)
+
+# Напишите программу, вычисляющую объём куба и площадь его полной поверхности, по введённому значению длины ребра.
+
+storona = int(input())
+v = storona * storona * storona
+s = 6 * (storona * storona)
+print('Объем =', v)
+print('Площадь полной поверхности =', s)
 
 
