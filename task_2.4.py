@@ -63,16 +63,30 @@
 # Напишите программу, в которой вычисляется сумма,
 # разность и произведение двух целых чисел, введенных с клавиатуры.
 
-num1 = int(input())
-num2 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+#
+# suma = num1 + num2
+# difference = num1 - num2
+# multiplication = num1 * num2
+# print(num1, '+', num2, '=', suma)
+# print(num1, '-', num2, '=', difference)
+# print(num1, '*', num2, '=', multiplication)
 
-suma = num1 + num2
-difference = num1 - num2
-multiplication = num1 * num2
-print(num1, '+', num2, '=', suma)
-print(num1, '-', num2, '=', difference)
-print(num1, '*', num2, '=', multiplication)
+# Арифметической прогрессией называется последовательность чисел a_1, a_2, ..., a_n,
+# получается из предыдущего прибавлением к нему одного и того же постоянного числа d (разность прогрессии), то есть:
+#
+# a_n=a_{n−1}+d
+#
+# Если известен первый член прогрессии и её разность, то n-ый член арифметической прогрессии находится по формуле:
+#
+# a_n=a_1+d(n-1)
 
+a_1 = int(input())
+d = int(input())
+n = int(input())
+a_n = a_1 + d * (n -1)
+print(a_n)
 
 
 
