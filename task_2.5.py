@@ -18,8 +18,25 @@
 
 # Напишите программу, которая находит полное число метров по заданному числу сантиметров.
 
-amount_sm = int(input())
-count_met = amount_sm // 100
-print(count_met)
+# amount_sm = int(input())
+# count_met = amount_sm // 100
+# print(count_met)
+
+# n школьников делят k мандаринов поровну,
+# неделящийся остаток остается в корзине.
+# Сколько целых мандаринов достанется каждому школьнику?
+# Сколько целых мандаринов останется в корзине?
+
+amount_schoolboy = int(input())
+amount_mandarin = int(input())
+
+count_mandarin = amount_mandarin // amount_schoolboy
+remainder_mandarin = amount_mandarin % amount_schoolboy
+print(count_mandarin)
+print(remainder_mandarin)
+
+
+
+
 
 
