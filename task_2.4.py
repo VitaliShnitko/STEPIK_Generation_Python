@@ -42,12 +42,23 @@
 # Напишите программу, которая считывает целое число,
 # после чего на экран выводится следующее и предыдущее целое число с пояснительным текстом.
 
-num = int(input())
-next_num = num + 1
-previous_num = num - 1
+# num = int(input())
+# next_num = num + 1
+# previous_num = num - 1
+#
+# print('Следующее за числом', num, 'число: ', next_num)
+# print('Для числа', num, 'предыдущее число: ', previous_num)
 
-print('Следующее за числом', num, 'число: ', next_num)
-print('Для числа', num, 'предыдущее число: ', previous_num)
+# Напишите программу, которая считает стоимость трех компьютеров,
+# состоящих из монитора, системного блока, клавиатуры и мыши.
+
+monitor = int(input())
+computer_system = int(input())
+keyboard = int(input())
+mouse = int(input())
+
+pay_computer = (monitor + computer_system + keyboard + mouse) * 3
+print(pay_computer)
 
 
 
