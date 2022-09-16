@@ -52,14 +52,26 @@
 # Напишите программу, которая считает стоимость трех компьютеров,
 # состоящих из монитора, системного блока, клавиатуры и мыши.
 
-monitor = int(input())
-computer_system = int(input())
-keyboard = int(input())
-mouse = int(input())
+# monitor = int(input())
+# computer_system = int(input())
+# keyboard = int(input())
+# mouse = int(input())
+#
+# pay_computer = (monitor + computer_system + keyboard + mouse) * 3
+# print(pay_computer)
 
-pay_computer = (monitor + computer_system + keyboard + mouse) * 3
-print(pay_computer)
+# Напишите программу, в которой вычисляется сумма,
+# разность и произведение двух целых чисел, введенных с клавиатуры.
 
+num1 = int(input())
+num2 = int(input())
+
+suma = num1 + num2
+difference = num1 - num2
+multiplication = num1 * num2
+print(num1, '+', num2, '=', suma)
+print(num1, '-', num2, '=', difference)
+print(num1, '*', num2, '=', multiplication)
 
 
 
