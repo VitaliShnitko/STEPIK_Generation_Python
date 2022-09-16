@@ -49,10 +49,19 @@
 # Напишите программу, которая определяет номер купе,
 # в котором находится место с заданным номером.
 
-num_place = int(input())
-places = num_place + 3
-kupe = int(places / 4)
-print(kupe)
+# num_place = int(input())
+# places = num_place + 3
+# kupe = int(places / 4)
+# print(kupe)
+
+# Напишите программу для пересчёта величины временного интервала,
+# заданного в минутах, в величину, выраженную в часах и минутах.
+
+minuts = int(input())
+hour = minuts // 60
+minut = minuts % 60
+print(minuts, 'мин', '-', 'это', hour, 'час', minut, 'минут.')
+
 
 
 
