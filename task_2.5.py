@@ -27,13 +27,26 @@
 # Сколько целых мандаринов достанется каждому школьнику?
 # Сколько целых мандаринов останется в корзине?
 
-amount_schoolboy = int(input())
-amount_mandarin = int(input())
+# amount_schoolboy = int(input())
+# amount_mandarin = int(input())
+#
+# count_mandarin = amount_mandarin // amount_schoolboy
+# remainder_mandarin = amount_mandarin % amount_schoolboy
+# print(count_mandarin)
+# print(remainder_mandarin)
 
-count_mandarin = amount_mandarin // amount_schoolboy
-remainder_mandarin = amount_mandarin % amount_schoolboy
-print(count_mandarin)
-print(remainder_mandarin)
+# Безумный титан Танос собрал все 6 камней бесконечности и
+# намеревается уничтожить половину населения Вселенной по щелчку пальцев.
+# При этом если население Вселенной является нечетным числом,
+# то титан проявит милосердие и округлит количество выживших в большую сторону.
+# Помогите Мстителям подсчитать количество выживших.
+
+n_people = int(input()) + 1
+r_people = n_people // 2
+print(r_people)
+
+
+
 
 
 
