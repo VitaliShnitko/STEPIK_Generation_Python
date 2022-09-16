@@ -8,11 +8,18 @@
 # b_n=b_1* q^{n-1}
 
 
-b_1 = int(input())
-q = int(input())
-n = int(input())
+# b_1 = int(input())
+# q = int(input())
+# n = int(input())
+#
+# b_n = b_1 * (q**(n-1))
+#
+# print(b_n)
 
-b_n = b_1 * (q**(n-1))
+# Напишите программу, которая находит полное число метров по заданному числу сантиметров.
 
-print(b_n)
+amount_sm = int(input())
+count_met = amount_sm // 100
+print(count_met)
+
 
