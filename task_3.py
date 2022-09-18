@@ -4,10 +4,19 @@
 # Напишите программу, которая сравнивает пароль и его подтверждение.
 # Если они совпадают, то программа выводит: «Пароль принят», иначе: «Пароль не принят».
 
-password = input()
-password_confirm = input()
+# password = input()
+# password_confirm = input()
+#
+# if password == password_confirm:
+#     print('Пароль принят')
+# else:
+#     print('Пароль не принят')
 
-if password == password_confirm:
-    print('Пароль принят')
-else:
-    print('Пароль не принят')
+# Напишите программу, которая определяет, является число четным или нечетным.
+
+# num = int(input())
+#
+# if num % 2 == 0:
+#     print('Четное')
+# else:
+#     print('Нечетное')
