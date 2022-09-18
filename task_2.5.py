@@ -64,14 +64,30 @@
 
 # Напишите программу, в которой рассчитывается сумма и произведение цифр положительного трёхзначного числа.
 
+# digit = int(input())
+# digit1 = digit // 100
+# digit2 = (digit // 10) % 10
+# digit3 = digit % 10
+# sum_digit = digit1 + digit2 + digit3
+# multi_digit = digit1 * digit2 * digit3
+# print('Сумма цифр =', sum_digit)
+# print('Произведение цифр =', multi_digit)
+
+
+# Дано трехзначное число abc,
+# в котором все цифры различны. Напишите программу, которая выводит шесть чисел,
+# образованных при перестановке цифр заданного числа.
+
 digit = int(input())
 digit1 = digit // 100
 digit2 = (digit // 10) % 10
 digit3 = digit % 10
-sum_digit = digit1 + digit2 + digit3
-multi_digit = digit1 * digit2 * digit3
-print('Сумма цифр =', sum_digit)
-print('Произведение цифр =', multi_digit)
+print(digit)
+print(digit1 * 100 + digit3 * 10 + digit2)
+print(digit2 * 100 + digit1 * 10 + digit3)
+print(digit2 * 100 + digit3 * 10 + digit1)
+print(digit3 * 100 + digit1 * 10 + digit2)
+print(digit3 * 100 + digit2 * 10 + digit1)
 
 
 
