@@ -53,12 +53,23 @@
 # являются ли три заданных числа (в указанном порядке) последовательными членами арифметической прогрессии.
 
 
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+#
+# if (num2 - num1) + num2 == num3:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# Напишите программу, которая определяет наименьшее из двух чисел.
+
 num1 = int(input())
 num2 = int(input())
-num3 = int(input())
 
-if (num2 - num1) + num2 == num3:
-    print('YES')
+if num1 < num2:
+    print(num1)
 else:
-    print('NO')
+    print(num2)
 
