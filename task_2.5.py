@@ -57,10 +57,23 @@
 # Напишите программу для пересчёта величины временного интервала,
 # заданного в минутах, в величину, выраженную в часах и минутах.
 
-minuts = int(input())
-hour = minuts // 60
-minut = minuts % 60
-print(minuts, 'мин', '-', 'это', hour, 'час', minut, 'минут.')
+# minuts = int(input())
+# hour = minuts // 60
+# minut = minuts % 60
+# print(minuts, 'мин', '-', 'это', hour, 'час', minut, 'минут.')
+
+# Напишите программу, в которой рассчитывается сумма и произведение цифр положительного трёхзначного числа.
+
+digit = int(input())
+digit1 = digit // 100
+digit2 = (digit // 10) % 10
+digit3 = digit % 10
+sum_digit = digit1 + digit2 + digit3
+multi_digit = digit1 * digit2 * digit3
+print('Сумма цифр =', sum_digit)
+print('Произведение цифр =', multi_digit)
+
+
 
 
 
