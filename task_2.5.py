@@ -78,16 +78,28 @@
 # в котором все цифры различны. Напишите программу, которая выводит шесть чисел,
 # образованных при перестановке цифр заданного числа.
 
+# digit = int(input())
+# digit1 = digit // 100
+# digit2 = (digit // 10) % 10
+# digit3 = digit % 10
+# print(digit)
+# print(digit1 * 100 + digit3 * 10 + digit2)
+# print(digit2 * 100 + digit1 * 10 + digit3)
+# print(digit2 * 100 + digit3 * 10 + digit1)
+# print(digit3 * 100 + digit1 * 10 + digit2)
+# print(digit3 * 100 + digit2 * 10 + digit1)
+
+# Напишите программу для нахождения цифр четырёхзначного числа.
+
 digit = int(input())
-digit1 = digit // 100
-digit2 = (digit // 10) % 10
-digit3 = digit % 10
-print(digit)
-print(digit1 * 100 + digit3 * 10 + digit2)
-print(digit2 * 100 + digit1 * 10 + digit3)
-print(digit2 * 100 + digit3 * 10 + digit1)
-print(digit3 * 100 + digit1 * 10 + digit2)
-print(digit3 * 100 + digit2 * 10 + digit1)
+digit1 = digit // 1000
+digit2 = (digit // 100) % 10
+digit3 = (digit // 10) % 10
+digit4 = digit % 10
+print('Цифра в позиции тысяч равна', digit1)
+print('Цифра в позиции сотен равна', digit2)
+print('Цифра в позиции десятков равна', digit3)
+print('Цифра в позиции единиц равна', digit4)
 
 
 
