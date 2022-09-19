@@ -76,24 +76,42 @@
 # Напишите программу, которая определяет наименьшее из четырёх чисел.
 
 
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
-num4 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# num4 = int(input())
+#
+# min12 = 0
+# min34 = 0
+#
+# if num1 < num2:
+#     min12 = num1
+# else:
+#     min12 = num2
+# if num3 < num4:
+#     min34 = num3
+# else:
+#     min34 = num4
+# if min12 < min34:
+#     print(min12)
+# else:
+#     print(min34)
 
-min12 = 0
-min34 = 0
+# Напишите программу, которая по введённому возрасту пользователя сообщает, к какой возрастной группе он относится:
+#
+# до 13 включительно – детство;
+# от 14 до 24 – молодость;
+# от 25 до 59 – зрелость;
+# от 60 – старость.
 
-if num1 < num2:
-    min12 = num1
+age = int(input())
+
+if age <= 13:
+    print('детство')
+elif 14 <= age <= 24:
+    print('молодость')
+elif 25 <= age <= 59:
+    print('зрелость')
 else:
-    min12 = num2
-if num3 < num4:
-    min34 = num3
-else:
-    min34 = num4
-if min12 < min34:
-    print(min12)
-else:
-    print(min34)
+    print('старость')
 
