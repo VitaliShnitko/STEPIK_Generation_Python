@@ -104,14 +104,37 @@
 # от 25 до 59 – зрелость;
 # от 60 – старость.
 
-age = int(input())
+# age = int(input())
+#
+# if age <= 13:
+#     print('детство')
+# elif 14 <= age <= 24:
+#     print('молодость')
+# elif 25 <= age <= 59:
+#     print('зрелость')
+# else:
+#     print('старость')
 
-if age <= 13:
-    print('детство')
-elif 14 <= age <= 24:
-    print('молодость')
-elif 25 <= age <= 59:
-    print('зрелость')
+
+# Напишите программу, которая считывает три числа и подсчитывает сумму только положительных чисел.
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+
+
+if num1 > 0:
+    num1 = num1
 else:
-    print('старость')
-
+    num1 = 0
+if num2 > 0:
+    num2 = num2
+else:
+    num2 = 0
+if num3 > 0:
+    num3 = num3
+else:
+    num3 = 0
+sum_number = num1 + num2 + num3
+print(sum_number)
