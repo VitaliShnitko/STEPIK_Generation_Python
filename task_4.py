@@ -65,11 +65,35 @@
 
 # Напишите программу, которая определяет наименьшее из двух чисел.
 
+# num1 = int(input())
+# num2 = int(input())
+#
+# if num1 < num2:
+#     print(num1)
+# else:
+#     print(num2)
+
+# Напишите программу, которая определяет наименьшее из четырёх чисел.
+
+
 num1 = int(input())
 num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+
+min12 = 0
+min34 = 0
 
 if num1 < num2:
-    print(num1)
+    min12 = num1
 else:
-    print(num2)
+    min12 = num2
+if num3 < num4:
+    min34 = num3
+else:
+    min34 = num4
+if min12 < min34:
+    print(min12)
+else:
+    print(min34)
 
