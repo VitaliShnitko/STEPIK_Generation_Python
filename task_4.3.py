@@ -19,13 +19,28 @@
 # Напишите программу, которая принимает три положительных числа и
 # определяет вид треугольника, длины сторон которого равны введенным числам.
 
-a = int(input())
-b = int(input())
-c = int(input())
+# a = int(input())
+# b = int(input())
+# c = int(input())
+#
+# if a == b == c:
+#     print('Равносторонний')
+# elif a == b != c or a != b == c or a == c != b:
+#     print('Равнобедренный')
+# else:
+#     print('Разносторонний')
 
-if a == b == c:
-    print('Равносторонний')
-elif a == b != c or a != b == c or a == c != b:
-    print('Равнобедренный')
-else:
-    print('Разносторонний')
+# Даны три различных целых числа.
+# Напишите программу, которая находит среднее по величине число.
+
+
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+if num1 > num2 > num3 or num3 > num2 > num1:
+    print(num2)
+elif num2 > num1 > num3 or num3 > num1 > num2:
+    print(num1)
+elif num1 > num3 > num2 or num2 > num3 > num1:
+    print(num3)
