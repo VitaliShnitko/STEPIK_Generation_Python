@@ -6,12 +6,26 @@
 #
 # Напишите программу, которая должна вывести ответ Циско на вопрос Флэша.
 
-n = int(input())
-k = int(input())
+# n = int(input())
+# k = int(input())
+#
+# if n > k:
+#     print('NO')
+# elif n < k:
+#     print('YES')
+# else:
+#     print("Don't know")
 
-if n > k:
-    print('NO')
-elif n < k:
-    print('YES')
+# Напишите программу, которая принимает три положительных числа и
+# определяет вид треугольника, длины сторон которого равны введенным числам.
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a == b == c:
+    print('Равносторонний')
+elif a == b != c or a != b == c or a == c != b:
+    print('Равнобедренный')
 else:
-    print("Don't know")
+    print('Разносторонний')
