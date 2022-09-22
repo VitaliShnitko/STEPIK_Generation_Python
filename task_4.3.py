@@ -34,13 +34,27 @@
 # Напишите программу, которая находит среднее по величине число.
 
 
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+#
+# if num1 > num2 > num3 or num3 > num2 > num1:
+#     print(num2)
+# elif num2 > num1 > num3 or num3 > num1 > num2:
+#     print(num1)
+# elif num1 > num3 > num2 or num2 > num3 > num1:
+#     print(num3)
 
-if num1 > num2 > num3 or num3 > num2 > num1:
-    print(num2)
-elif num2 > num1 > num3 or num3 > num1 > num2:
-    print(num1)
-elif num1 > num3 > num2 or num2 > num3 > num1:
-    print(num3)
+# Дан порядковый номер месяца(1,2,…, 12).
+# Напишите программу, которая выводит на экран количество дней в этом месяце.
+# Принять, что год является невисокосным.
+
+
+month = int(input())
+
+if month == 6 or month == 9 or month == 4 or month == 11 :
+    print('30')
+elif month == 2:
+    print('28')
+else:
+    print('31')
