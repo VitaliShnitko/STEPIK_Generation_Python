@@ -150,46 +150,71 @@
 # которое лежит вне диапазона от 0 до 36.
 
 
-number = int(input())
-
-if 0 <= number <= 36:
-    if number == 0:
-        print('зеленый')
-    elif 1 <= number <= 10:
-        if number % 2 == 0:
-            print('черный')
-        else:
-            print('красный')
-    elif 11 <= number <= 18:
-        if number % 2 == 0:
-            print('красный')
-        else:
-            print('черный')
-    elif 19 <= number <= 28:
-        if number % 2 == 0:
-            print('черный')
-        else:
-            print('красный')
-    elif 29 <= number <= 36:
-        if number % 2 == 0:
-            print('красный')
-        else:
-            print('черный')
-else:
-    print('ошибка ввода')
-
-
+# number = int(input())
+#
+# if 0 <= number <= 36:
+#     if number == 0:
+#         print('зеленый')
+#     elif 1 <= number <= 10:
+#         if number % 2 == 0:
+#             print('черный')
+#         else:
+#             print('красный')
+#     elif 11 <= number <= 18:
+#         if number % 2 == 0:
+#             print('красный')
+#         else:
+#             print('черный')
+#     elif 19 <= number <= 28:
+#         if number % 2 == 0:
+#             print('черный')
+#         else:
+#             print('красный')
+#     elif 29 <= number <= 36:
+#         if number % 2 == 0:
+#             print('красный')
+#         else:
+#             print('черный')
+# else:
+#     print('ошибка ввода')
 
 
 
+# На числовой прямой даны два отрезка: [a_1;  b_1] и [a_2; \, b_2].
+# Напишите программу, которая находит их пересечение.
+#
+# Пересечением двух отрезков может быть:
+#
+# отрезок;
+# точка;
+# пустое множество.
 
 
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
 
-
-
-
-
-
-
-
+if a2 == b1:
+    print(b1)
+elif a1 == b2:
+    print(b2)
+elif a1 < a2 > b1 and a1 < b2 > b1:
+    print('пустое множество')
+elif a1 > a2 < b1 and a1 > b2 < b1:
+    print('пустое множество')
+elif a1 < a2 < b1 and a1 < b2 > b1:
+    print(a2, b1)
+elif a1 < a2 < b1 and a1 < b2 <= b1:
+    print(a2, b2)
+elif a1 <= a2 < b1 and a1 < b2 < b1:
+    print(a2, b2)
+elif a1 > a2 < b1 and a1 < b2 < b1:
+    print(a1, b2)
+elif a1 > a2 < b1 and a1 < b2 <= b1:
+    print(a1, b2)
+elif a1 > a2 < b1 and a1 < b2 > b1:
+    print(a1, b1)
+elif a1 <= a2 < b1 and a1 < b2 > b1:
+    print(a1, b1)
 
