@@ -12,6 +12,18 @@
 # Напишите программу, которая определяет имеют ли указанные клетки один цвет или нет.
 # Если они покрашены в один цвет, то выведите слово «YES», а если в разные цвета — то «NO».
 
+column1 = int(input())
+str1 = int(input())
+column2 = int(input())
+str2 = int(input())
+
+if (column1 + column2 + str1 + str2) % 2 == 0:
+    print('YES')
+else:
+    print('NO')
+
+
+
 
 
 
@@ -65,15 +77,17 @@
 # если число чётное в диапазоне от 6 до 20 (включительно), то вывести «YES»;
 # если число чётное и больше 20, то вывести «NO».
 
-num = int(input())
+# num = int(input())
+# if num % 2 == 0:
+#     if 2 <= num <= 5:
+#         print('NO')
+#     elif 6 <= num <= 20:
+#         print('YES')
+#     elif num > 20:
+#         print('NO')
+# else:
+#     print('YES')
 
-if num % 2 == 0:
-    if 2 <= num <= 5:
-        print('NO')
-    elif 6 <= num <= 20:
-        print('YES')
-    elif num > 20:
-        print('NO')
-else:
-    print('YES')
+
+
 
