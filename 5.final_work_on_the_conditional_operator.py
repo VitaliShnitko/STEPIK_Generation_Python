@@ -32,27 +32,48 @@
 # которая считывает целое число и выводит соответствующую ему римскую цифру.
 # Если число находится вне диапазона 1-10, то программа должна вывести текст «ошибка».
 
-rim_num = int(input())
+# rim_num = int(input())
+#
+# if rim_num == 1:
+#     print('I')
+# elif rim_num == 2:
+#     print('II')
+# elif rim_num == 3:
+#     print('III')
+# elif rim_num == 4:
+#     print('IV')
+# elif rim_num == 5:
+#     print('V')
+# elif rim_num == 6:
+#     print('VI')
+# elif rim_num == 7:
+#     print('VII')
+# elif rim_num == 8:
+#     print('VIII')
+# elif rim_num == 9:
+#     print('IX')
+# elif rim_num == 10:
+#     print('X')
+# else:
+#     print('ошибка')
 
-if rim_num == 1:
-    print('I')
-elif rim_num == 2:
-    print('II')
-elif rim_num == 3:
-    print('III')
-elif rim_num == 4:
-    print('IV')
-elif rim_num == 5:
-    print('V')
-elif rim_num == 6:
-    print('VI')
-elif rim_num == 7:
-    print('VII')
-elif rim_num == 8:
-    print('VIII')
-elif rim_num == 9:
-    print('IX')
-elif rim_num == 10:
-    print('X')
+
+# Напишите программу, которая принимает на вход число и в зависимости от условий выводит текст «YES», либо «NO».
+# Условия:
+# если число нечётное, то вывести «YES»;
+# если число чётное в диапазоне от 2 до 5 (включительно), то вывести «NO»;
+# если число чётное в диапазоне от 6 до 20 (включительно), то вывести «YES»;
+# если число чётное и больше 20, то вывести «NO».
+
+num = int(input())
+
+if num % 2 == 0:
+    if 2 <= num <= 5:
+        print('NO')
+    elif 6 <= num <= 20:
+        print('YES')
+    elif num > 20:
+        print('NO')
 else:
-    print('ошибка')
+    print('YES')
+
