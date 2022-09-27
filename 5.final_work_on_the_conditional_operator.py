@@ -91,12 +91,30 @@
 # Программа должна вывести «YES»,
 # если из первой клетки ходом слона можно попасть во вторую или «NO» в противном случае.
 
+# column1 = int(input())
+# str1 = int(input())
+# column2 = int(input())
+# str2 = int(input())
+#
+# if column1 + str1 == column2 + str2 or str1 - column1 == str2 - column2:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# Даны две различные клетки шахматной доски. Напишите программу,
+# которая определяет, может ли конь попасть с первой клетки на вторую одним ходом.
+# Программа получает на вход четыре числа от 1 до 8 каждое,
+# задающие номер столбца и номер строки сначала для первой клетки, потом для второй клетки.
+# Программа должна вывести «YES», если из первой клетки ходом коня
+# можно попасть во вторую или «NO» в противном случае.
+
 column1 = int(input())
 str1 = int(input())
 column2 = int(input())
 str2 = int(input())
 
-if column1 + str1 == column2 + str2 or str1 - column1 == str2 - column2:
+if (column1 + str1 + column2 + str2) % 2 != 0 and column1 != column2 and str1 != str2:
     print('YES')
 else:
     print('NO')
