@@ -28,3 +28,31 @@
 # else:
 #     print('NO')
 
+# Напишите программу,
+# которая считывает целое число и выводит соответствующую ему римскую цифру.
+# Если число находится вне диапазона 1-10, то программа должна вывести текст «ошибка».
+
+rim_num = int(input())
+
+if rim_num == 1:
+    print('I')
+elif rim_num == 2:
+    print('II')
+elif rim_num == 3:
+    print('III')
+elif rim_num == 4:
+    print('IV')
+elif rim_num == 5:
+    print('V')
+elif rim_num == 6:
+    print('VI')
+elif rim_num == 7:
+    print('VII')
+elif rim_num == 8:
+    print('VIII')
+elif rim_num == 9:
+    print('IX')
+elif rim_num == 10:
+    print('X')
+else:
+    print('ошибка')
