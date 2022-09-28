@@ -95,14 +95,25 @@
 # Напишите программу, которая определяет интересное число или нет.
 # Если число интересное, следует вывести – «Число интересное» иначе «Число неинтересное».
 
-num = int(input())
+# num = int(input())
+#
+# num1 = num // 100
+# num2 = (num // 10) % 10
+# num3 = num % 10
+#
+# if max(num1, num2, num3) - min(num1, num2, num3) == (num1 + num2 + num3) - min(num1, num2, num3) - max(num1, num2, num3):
+#     print('Число интересное')
+# else:
+#     print('Число неинтересное')
 
-num1 = num // 100
-num2 = (num // 10) % 10
-num3 = num % 10
+# Даны пять чисел a1, a2, a3, a4, a5 .
+# Напишите программу, которая вычисляет сумму их модулей |a_1| + |a_2| +|a_3| +|a_4| + |a_5|
 
-if max(num1, num2, num3) - min(num1, num2, num3) == (num1 + num2 + num3) - min(num1, num2, num3) - max(num1, num2, num3):
-    print('Число интересное')
-else:
-    print('Число неинтересное')
+a1 = abs(float(input()))
+a2 = abs(float(input()))
+a3 = abs(float(input()))
+a4 = abs(float(input()))
+a5 = abs(float(input()))
 
+sun_a = a1 + a2 + a3 + a4 + a5
+print(sun_a)
