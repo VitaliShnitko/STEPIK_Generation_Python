@@ -66,14 +66,27 @@
 
 # Напишите программу, которая находит наименьшее и наибольшее из пяти чисел.
 
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# num4 = int(input())
+# num5 = int(input())
+#
+# min_num = min(num1, num2, num3, num4, num5)
+# max_num = max(num1, num2, num3, num4, num5)
+#
+# print('Наименьшее число =', min_num)
+# print('Наибольшее число =', max_num)
+
+# Напишите программу, которая упорядочивает три числа от большего к меньшему.
+
 num1 = int(input())
 num2 = int(input())
 num3 = int(input())
-num4 = int(input())
-num5 = int(input())
 
-min_num = min(num1, num2, num3, num4, num5)
-max_num = max(num1, num2, num3, num4, num5)
-
-print('Наименьшее число =', min_num)
-print('Наибольшее число =', max_num)
+num_max = max(num1, num2, num3)
+num_min = min(num1, num2, num3)
+num_s = (num1 + num2 + num3) - num_max -num_min
+print(num_max)
+print(num_s)
+print(num_min)
