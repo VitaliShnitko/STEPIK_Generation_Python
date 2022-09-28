@@ -80,13 +80,29 @@
 
 # Напишите программу, которая упорядочивает три числа от большего к меньшему.
 
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+#
+# num_max = max(num1, num2, num3)
+# num_min = min(num1, num2, num3)
+# num_s = (num1 + num2 + num3) - num_max -num_min
+# print(num_max)
+# print(num_s)
+# print(num_min)
 
-num_max = max(num1, num2, num3)
-num_min = min(num1, num2, num3)
-num_s = (num1 + num2 + num3) - num_max -num_min
-print(num_max)
-print(num_s)
-print(num_min)
+# Назовем число интересным, если в нем разность максимальной и минимальной цифры равняется средней по величине цифре.
+# Напишите программу, которая определяет интересное число или нет.
+# Если число интересное, следует вывести – «Число интересное» иначе «Число неинтересное».
+
+num = int(input())
+
+num1 = num // 100
+num2 = (num // 10) % 10
+num3 = num % 10
+
+if max(num1, num2, num3) - min(num1, num2, num3) == (num1 + num2 + num3) - min(num1, num2, num3) - max(num1, num2, num3):
+    print('Число интересное')
+else:
+    print('Число неинтересное')
+
