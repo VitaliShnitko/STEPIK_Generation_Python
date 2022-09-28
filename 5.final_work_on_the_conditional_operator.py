@@ -128,12 +128,12 @@
 # если из первой клетки ходом ферзя можно попасть во вторую или «NO» в противном случае.
 
 
-column1 = int(input())
-str1 = int(input())
-column2 = int(input())
-str2 = int(input())
-
-if (column1 + str1 == column2 + str2 or str1 - column1 == str2 - column2) or (column1 == column2 or str1 == str2):
-    print('YES')
-else:
-    print('NO')
+# column1 = int(input())
+# str1 = int(input())
+# column2 = int(input())
+# str2 = int(input())
+#
+# if (column1 + str1 == column2 + str2 or str1 - column1 == str2 - column2) or (column1 == column2 or str1 == str2):
+#     print('YES')
+# else:
+#     print('NO')
