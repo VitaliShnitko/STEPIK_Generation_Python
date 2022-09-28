@@ -64,4 +64,16 @@
 # num2 = num - (int(num))
 # print(num2)
 
+# Напишите программу, которая находит наименьшее и наибольшее из пяти чисел.
 
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
+num5 = int(input())
+
+min_num = min(num1, num2, num3, num4, num5)
+max_num = max(num1, num2, num3, num4, num5)
+
+print('Наименьшее число =', min_num)
+print('Наибольшее число =', max_num)
