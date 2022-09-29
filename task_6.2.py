@@ -9,7 +9,15 @@
 #
 # «Hello [введенное имя] [введенная фамилия]! You just delved into Python».
 
-name = input()
-family = input()
+# name = input()
+# family = input()
+#
+# print('Hello ' + name + ' ' + family + '!' + ' You just delved into Python')
 
-print('Hello ' + name + ' ' + family + '!' + ' You just delved into Python')
+# Напишите программу, которая считывает с клавиатуры название футбольной команды и выводит фразу:
+#
+# «Футбольная команда [введённая строка] имеет длину [длина введённой строки] символов».
+
+team = input()
+team_len = len(team)
+print('Футбольная команда ' + team + ' имеет длину ' + str(team_len) + ' символов')
