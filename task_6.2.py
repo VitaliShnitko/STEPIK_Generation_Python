@@ -25,26 +25,36 @@
 # Даны названия трех городов. Напишите программу,
 # которая определяет самое короткое и самое длинное название города.
 
-city1 = input()
-city2 = input()
-city3 = input()
+# city1 = input()
+# city2 = input()
+# city3 = input()
+#
+# len1 = len(city1)
+# len2 = len(city2)
+# len3 = len(city3)
+#
+# if len1 == min(len(city1), len(city2), len(city3)):
+#     print(city1)
+# elif len2 == min(len(city1), len(city2), len(city3)):
+#     print(city2)
+# else:
+#     print(city3)
+# if len1 == max(len(city1), len(city2), len(city3)):
+#     print(city1)
+# elif len2 == max(len(city1), len(city2), len(city3)):
+#     print(city2)
+# else:
+#     print(city3)
 
-len1 = len(city1)
-len2 = len(city2)
-len3 = len(city3)
+# Вводятся 3 строки в случайном порядке.
+# Напишите программу, которая выясняет можно ли из длин этих строк
+# построить возрастающую арифметическую прогрессию.
 
-if len1 == min(len(city1), len(city2), len(city3)):
-    print(city1)
-elif len2 == min(len(city1), len(city2), len(city3)):
-    print(city2)
+str1 = len(input())
+str2 = len(input())
+str3 = len(input())
+
+if (2 * str2 - str3 - str1) * (2 * str3 - str2 - str1) * (2 * str1 - str2 - 3) == 0:
+    print('YES')
 else:
-    print(city3)
-if len1 == max(len(city1), len(city2), len(city3)):
-    print(city1)
-elif len2 == max(len(city1), len(city2), len(city3)):
-    print(city2)
-else:
-    print(city3)
-
-
-
+    print('NO')
