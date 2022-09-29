@@ -50,11 +50,21 @@
 # Напишите программу, которая выясняет можно ли из длин этих строк
 # построить возрастающую арифметическую прогрессию.
 
-str1 = len(input())
-str2 = len(input())
-str3 = len(input())
+# str1 = len(input())
+# str2 = len(input())
+# str3 = len(input())
+#
+# if (2 * str2 - str3 - str1) * (2 * str3 - str2 - str1) * (2 * str1 - str2 - 3) == 0:
+#     print('YES')
+# else:
+#     print('NO')
 
-if (2 * str2 - str3 - str1) * (2 * str3 - str2 - str1) * (2 * str1 - str2 - 3) == 0:
+# Напишите программу, которая считывает одну строку,
+# после чего выводит «YES», если в введенной строке есть подстрока «синий» и «NO» в противном случае.
+
+str1 = input()
+s = 'синий'
+if s in str1:
     print('YES')
 else:
     print('NO')
