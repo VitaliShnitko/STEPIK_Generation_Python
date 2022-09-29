@@ -18,6 +18,33 @@
 #
 # «Футбольная команда [введённая строка] имеет длину [длина введённой строки] символов».
 
-team = input()
-team_len = len(team)
-print('Футбольная команда ' + team + ' имеет длину ' + str(team_len) + ' символов')
+# team = input()
+# team_len = len(team)
+# print('Футбольная команда ' + team + ' имеет длину ' + str(team_len) + ' символов')
+
+# Даны названия трех городов. Напишите программу,
+# которая определяет самое короткое и самое длинное название города.
+
+city1 = input()
+city2 = input()
+city3 = input()
+
+len1 = len(city1)
+len2 = len(city2)
+len3 = len(city3)
+
+if len1 == min(len(city1), len(city2), len(city3)):
+    print(city1)
+elif len2 == min(len(city1), len(city2), len(city3)):
+    print(city2)
+else:
+    print(city3)
+if len1 == max(len(city1), len(city2), len(city3)):
+    print(city1)
+elif len2 == max(len(city1), len(city2), len(city3)):
+    print(city2)
+else:
+    print(city3)
+
+
+
