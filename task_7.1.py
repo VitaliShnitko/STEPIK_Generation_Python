@@ -1,4 +1,13 @@
 # Напишите программу, которая выводит слова «Python is awesome!» (без кавычек) 10 раз.
 
-for i in range(10):
-    print('Python is awesome!')
+# for i in range(10):
+#     print('Python is awesome!')
+
+# Дано предложение и количество раз которое его надо повторить.
+# Напишите программу, которая повторяет данное предложение нужное количество раз.
+
+text = input()
+n = int(input())
+
+for i in range(n):
+    print(text)
