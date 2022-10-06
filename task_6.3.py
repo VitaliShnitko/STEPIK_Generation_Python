@@ -39,11 +39,22 @@
 # Напишите программу, вычисляющую значение тригонометрического выражения sin x + cos x + tan^2x
 # по заданному числу градусов x.
 
-from math import sin, cos, tan, radians
-x = radians(float(input()))
+# from math import sin, cos, tan, radians
+# x = radians(float(input()))
+#
+# trig = sin(x) + cos(x) + (tan(x) ** 2)
+# print(trig)
 
-trig = sin(x) + cos(x) + (tan(x) ** 2)
-print(trig)
+# Напишите программу, вычисляющую значение ⌈x⌉ +⌊x⌋ по заданному вещественному числу x.
+
+from math import floor, ceil
+x = float(input())
+
+a = ceil(x)
+b = floor(x)
+
+result = a + b
+print(result)
 
 
 
