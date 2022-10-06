@@ -9,13 +9,33 @@
 # print(p)
 
 # Напишите программу определяющую площадь круга и длину окружности по заданному радиусу R.
-from math import pi
-r = float(input())
-p = pi
-S = p * (r ** 2)
-C = 2 * p * r
-print(S)
-print(C)
+# from math import pi
+# r = float(input())
+# p = pi
+# S = p * (r ** 2)
+# C = 2 * p * r
+# print(S)
+# print(C)
+
+# В математике выделяют следующие средние значения:
+#
+# среднее арифметическое чисел a и b
+# среднее геометрическое чисел a и b
+# среднее гармоническое чисел a и b
+# среднее квадратичное чисел a и b
+
+a = float(input())
+b = float(input())
+
+arif = (a + b) / 2
+geo = (a * b) ** 0.5
+gar = (2 * a * b) / (a + b)
+kva = ((a ** 2 + b ** 2) / 2) ** 0.5
+print(arif)
+print(geo)
+print(gar)
+print(kva)
+
 
 
 
