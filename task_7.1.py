@@ -14,11 +14,22 @@
 
 
 # Напишите программу, которая использует ровно три цикла for для печати следующей последовательности символов:
-for i in range(6):
-    print('AAA')
-for i in range(5):
-    print('BBBB')
-print('E')
-for i in range(9):
-    print('TTTTT')
-print('G')
+# for i in range(6):
+#     print('AAA')
+# for i in range(5):
+#     print('BBBB')
+# print('E')
+# for i in range(9):
+#     print('TTTTT')
+# print('G')
+
+
+# На вход программе подается натуральное число nn.
+# Напишите программу, которая печатает звездный прямоугольник размерами n×19.
+
+n = int(input())
+str = '*' * 19
+
+for i in range(n):
+    print(str)
+
