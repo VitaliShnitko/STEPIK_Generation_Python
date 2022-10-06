@@ -47,14 +47,39 @@
 
 # Напишите программу, вычисляющую значение ⌈x⌉ +⌊x⌋ по заданному вещественному числу x.
 
-from math import floor, ceil
-x = float(input())
+# from math import floor, ceil
+# x = float(input())
+#
+# a = ceil(x)
+# b = floor(x)
+#
+# result = a + b
+# print(result)
 
-a = ceil(x)
-b = floor(x)
+# Даны три вещественных числа a, b, c. Напишите программу,
+# которая находит вещественные корни квадратного уравнения
+# ax^2 + bx + c = 0.
 
-result = a + b
-print(result)
+a = float(input())
+b = float(input())
+c = float(input())
+
+D = (b ** 2) - (4 * a * c)
+if D > 0:
+    x1 = (-b + D ** 0.5) / (2 * a)
+    x2 = (-b - D ** 0.5) / (2 * a)
+    if x1 < x2:
+        print(x1)
+        print(x2)
+    else:
+        print(x2)
+        print(x1)
+elif D == 0:
+    x = -(b / (2 * a))
+    print(x)
+else:
+    print('Нет корней')
+
 
 
 
