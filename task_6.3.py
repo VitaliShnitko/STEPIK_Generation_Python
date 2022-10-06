@@ -24,17 +24,26 @@
 # среднее гармоническое чисел a и b
 # среднее квадратичное чисел a и b
 
-a = float(input())
-b = float(input())
+# a = float(input())
+# b = float(input())
+#
+# arif = (a + b) / 2
+# geo = (a * b) ** 0.5
+# gar = (2 * a * b) / (a + b)
+# kva = ((a ** 2 + b ** 2) / 2) ** 0.5
+# print(arif)
+# print(geo)
+# print(gar)
+# print(kva)
 
-arif = (a + b) / 2
-geo = (a * b) ** 0.5
-gar = (2 * a * b) / (a + b)
-kva = ((a ** 2 + b ** 2) / 2) ** 0.5
-print(arif)
-print(geo)
-print(gar)
-print(kva)
+# Напишите программу, вычисляющую значение тригонометрического выражения sin x + cos x + tan^2x
+# по заданному числу градусов x.
+
+from math import sin, cos, tan, radians
+x = radians(float(input()))
+
+trig = sin(x) + cos(x) + (tan(x) ** 2)
+print(trig)
 
 
 
