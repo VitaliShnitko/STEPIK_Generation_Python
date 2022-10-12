@@ -14,11 +14,23 @@
 # На вход программе подается натуральное число n, а затем nn целых чисел,
 # каждое на отдельной строке. Напишите программу, которая подсчитывает сумму введенных чисел.
 
+# n = int(input())
+# total = 0
+#
+# for i in range(n):
+#     num = int(input())
+#     total += num
+# print(total)
+
+
+# На вход программе подается натуральное число n. Напишите программу, которая вычисляет значение выражения
+# Примечание. Для вычисления натурального логарифма воспользуйтесь функцией log(n), которая находится в модуле math.
+
+from math import log
+
 n = int(input())
-total = 0
-
-for i in range(n):
-    num = int(input())
-    total += num
-print(total)
-
+counter = 0
+for i in range(1, n+1):
+    counter = counter + (1 / i)
+    num = counter - log(n)
+print(num)
