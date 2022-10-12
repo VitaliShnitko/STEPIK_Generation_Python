@@ -2,11 +2,23 @@
 # которая подсчитывает количество чисел в диапазоне от a до b включительно,
 # куб которых оканчивается на 4 или 9.
 
-a = int(input())
-b = int(input())
+# a = int(input())
+# b = int(input())
+#
+# counter = 0
+# for i in range(a, b+1):
+#     if i**3 % 10 == 4 or i**3 % 10 == 9:
+#         counter += 1
+# print(counter)
 
-counter = 0
-for i in range(a, b+1):
-    if i**3 % 10 == 4 or i**3 % 10 == 9:
-        counter += 1
-print(counter)
+# На вход программе подается натуральное число n, а затем nn целых чисел,
+# каждое на отдельной строке. Напишите программу, которая подсчитывает сумму введенных чисел.
+
+n = int(input())
+total = 0
+
+for i in range(n):
+    num = int(input())
+    total += num
+print(total)
+
