@@ -57,10 +57,23 @@
 
 # Напишите программу, которая считывает 10 чисел и выводит произведение отличных от нуля чисел.
 
-total = 1
+# total = 1
+#
+# for i in range(10):
+#     n = int(input())
+#     if n != 0:
+#         total *= n
+# print(total)
 
-for i in range(10):
-    n = int(input())
-    if n != 0:
-        total *= n
+
+# На вход программе подается натуральное число n.
+# Напишите программу, которая вычисляет сумму всех его делителей.
+
+n = int(input())
+total = 0
+
+for i in range(1, n+1):
+    if n % i == 0:
+        total += i
 print(total)
+
