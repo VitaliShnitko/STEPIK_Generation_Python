@@ -81,12 +81,31 @@
 # На вход программе подается натуральное число n.
 # Напишите программу вычисления знакочередующей суммы.
 
-n = int(input())
-total = 0
+# n = int(input())
+# total = 0
+#
+# for i in range(1, n+1):
+#     if i % 2 == 0:
+#         total -= i
+#     else:
+#         total += i
+# print(total)
 
+
+# На вход программе подается натуральное число n, а затем n различных натуральных чисел,
+# каждое на отдельной строке. Напишите программу,
+# которая выводит наибольшее и второе наибольшее число последовательности.
+
+n = int(input())
+max1 = 0
+max2 = 1
 for i in range(1, n+1):
-    if i % 2 == 0:
-        total -= i
-    else:
-        total += i
-print(total)
+    num = int(input())
+    if num > max1:
+        max2 = max1
+        max1 = num
+    elif num > max2:
+        max2 = num
+print(max1)
+print(max2)
+
