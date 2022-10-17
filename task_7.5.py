@@ -54,21 +54,33 @@
 # его первую цифру;
 # сумму его первой и последней цифры.
 
-num = int(input())
-summa = 0
-count_digits = 0
-multi = 1
-last_digit = num % 10
+# num = int(input())
+# summa = 0
+# count_digits = 0
+# multi = 1
+# last_digit = num % 10
+#
+# while num != 0:
+#     first_digits = num % 10
+#     summa += first_digits
+#     count_digits += 1
+#     multi *= first_digits
+#     sr_arf = summa / count_digits
+#     summa_f_l = last_digit + first_digits
+#     num = num // 10
+# print(summa, count_digits, multi, sr_arf, first_digits, summa_f_l, sep='\n')
 
-while num != 0:
-    first_digits = num % 10
-    summa += first_digits
-    count_digits += 1
-    multi *= first_digits
-    sr_arf = summa / count_digits
-    summa_f_l = last_digit + first_digits
+
+# Дано натуральное число n(n > 9). Напишите программу,
+# которая определяет его вторую (с начала) цифру.
+
+num = int(input())
+
+while num > 9:
+    digits = num % 10
     num = num // 10
-print(summa, count_digits, multi, sr_arf, first_digits, summa_f_l, sep='\n')
+print(digits)
+
 
 
 
