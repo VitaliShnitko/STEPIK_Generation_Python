@@ -74,12 +74,45 @@
 # Дано натуральное число n(n > 9). Напишите программу,
 # которая определяет его вторую (с начала) цифру.
 
-num = int(input())
+# num = int(input())
+#
+# while num > 9:
+#     digits = num % 10
+#     num = num // 10
+# print(digits)
 
-while num > 9:
-    digits = num % 10
-    num = num // 10
-print(digits)
+
+# Дано натуральное число. Напишите программу, которая определяет,
+# состоит ли указанное число из одинаковых цифр.
+# 1 способ
+# num = int(input())
+# string = str(num)
+# max_digit = max(string)
+# min_digit = min(string)
+#
+# if min_digit == max_digit:
+#     print('YES')
+# else:
+#     print('NO')
+
+# 2 способ
+# num = int(input())
+# flag = True
+# last_digit = num % 10
+#
+# while num != 0:
+#     digit = num % 10
+#     if digit != last_digit:
+#         flag = False
+#     num = num // 10
+# if flag == True:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+
+
 
 
 
