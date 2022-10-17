@@ -31,15 +31,44 @@
 
 # 2 способ
 
+# num = int(input())
+# min_num = 9
+# max_num = 0
+#
+# while num != 0:
+#     if num % 10 < min_num:
+#         min_num = num % 10
+#     if num % 10 > max_num:
+#         max_num = num % 10
+#     num = num // 10
+# print('Максимальная цифра равна', max_num)
+# print('Минимальная цифра равна', min_num)
+
+
+# Дано натуральное число. Напишите программу, которая вычисляет:
+#
+# сумму его цифр;
+# количество цифр в нем;
+# произведение его цифр;
+# среднее арифметическое его цифр;
+# его первую цифру;
+# сумму его первой и последней цифры.
+
 num = int(input())
-min_num = 9
-max_num = 0
+summa = 0
+count_digits = 0
+multi = 1
+last_digit = num % 10
 
 while num != 0:
-    if num % 10 < min_num:
-        min_num = num % 10
-    if num % 10 > max_num:
-        max_num = num % 10
+    first_digits = num % 10
+    summa += first_digits
+    count_digits += 1
+    multi *= first_digits
+    sr_arf = summa / count_digits
+    summa_f_l = last_digit + first_digits
     num = num // 10
-print('Максимальная цифра равна', max_num)
-print('Минимальная цифра равна', min_num)
+print(summa, count_digits, multi, sr_arf, first_digits, summa_f_l, sep='\n')
+
+
+
