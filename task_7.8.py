@@ -72,11 +72,24 @@
 # если плата за быка – 10 рублей, за корову – 5 рублей,
 # за теленка – 0.5 рубля и надо купить 100 голов скота?
 
-for b in range(1, 11):
-    for k in range(1, 21):
-        for t in range(1, 201):
-            if b * 10 + k * 5 + t * 0.5 == 100 and b + k + t == 100:
-                print(b, k, t)
+# for b in range(1, 11):
+#     for k in range(1, 21):
+#         for t in range(1, 201):
+#             if b * 10 + k * 5 + t * 0.5 == 100 and b + k + t == 100:
+#                 print(b, k, t)
+
+
+# Решите уравнение в натуральных числах 28n + 30k + 31m = 365.
+
+for n in range(1, 14):
+    for k in range(1, 13):
+        for m in range(1, 12):
+            if 28 * n + 30 * k + 31 * m == 365:
+                print(n, k, m)
+
+
+
+
 
 
 
