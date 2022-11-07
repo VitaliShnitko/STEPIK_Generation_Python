@@ -32,19 +32,33 @@
 # Напишите программу, которая находит натуральное
 # число из отрезка [a;b] с максимальной суммой делителей.
 
-a = int(input())
-b = int(input())
-summ_count = 0
-summ_x = 0
-for x in range(a, b+1):
-    count = 0
-    for i in range(1, b+1):
-        if x % i == 0:
-            count += i
-        if count >= summ_count:
-            summ_count = count
-            summ_x = x
-print(summ_x, summ_count)
+# a = int(input())
+# b = int(input())
+# summ_count = 0
+# summ_x = 0
+# for x in range(a, b+1):
+#     count = 0
+#     for i in range(1, b+1):
+#         if x % i == 0:
+#             count += i
+#         if count >= summ_count:
+#             summ_count = count
+#             summ_x = x
+# print(summ_x, summ_count)
+
+
+# На вход программе подается натуральное число n. Напишите программу,
+# выводящую графическое изображение делимости чисел от 1 до n включительно.
+# В каждой строке надо напечатать очередное число и столько символов «+», сколько делителей у этого числа.
+
+n = int(input())
+for i in range(1, n+1):
+    count = ''
+    for x in range(1, n+1):
+        if i % x == 0:
+            count += '+'
+    print(i,count, sep='')
+
 
 
 
