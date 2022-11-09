@@ -1,6 +1,6 @@
 # Дано натуральное число n. Напишите программу,
 # которая печатает численный треугольник с высотой равной n, в соответствии с примером.
-
+import math
 # num = 1
 # n = int(input())
 # for i in range(1, n+1):
@@ -67,10 +67,34 @@
 # то в результате будет получено однозначное число (цифра),
 # которое и называется цифровым корнем данного числа.
 
+# n = int(input())
+# while n > 9:
+#     n = n // 10 + n % 10
+# print(n)
+
+
+# Дано натуральное число n.
+# Напишите программу, которая выводит значение суммы 1!+2!+3!+…+n!.
+
+# from math import factorial
+# n = int(input())
+# fact = 0
+# for i in range(1, n+1):
+#     fact += math.factorial(i)
+# print(fact)
+
 n = int(input())
-while n > 9:
-    n = n // 10 + n % 10
-print(n)
+total = 0
+for i in range(1, n+1):
+    counter = 1
+    for j in range(1, i+1):
+        counter *= j
+    total += counter
+print(total)
+
+
+
+
 
 
 
