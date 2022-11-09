@@ -83,14 +83,31 @@ import math
 #     fact += math.factorial(i)
 # print(fact)
 
-n = int(input())
-total = 0
-for i in range(1, n+1):
-    counter = 1
-    for j in range(1, i+1):
-        counter *= j
-    total += counter
-print(total)
+# n = int(input())
+# total = 0
+# for i in range(1, n+1):
+#     counter = 1
+#     for j in range(1, i+1):
+#         counter *= j
+#     total += counter
+# print(total)
+
+
+# На вход программе подается два натуральных числа a и b (a < b). Напишите программу,
+# которая находит все простые числа от a до b включительно.
+
+a = int(input())
+b = int(input())
+
+for i in range(a, b+1):
+    count = 0
+    for x in range(1, i+1):
+        if i % x == 0:
+            count += 1
+    if count == 2:
+        print(i)
+
+
 
 
 
