@@ -85,8 +85,52 @@
 # На вход программе подается натуральное число n.
 # Напишите программу, которая печатает звездную рамку размерами n×19.
 
+# n = int(input())
+# print('*'*19)
+# for i in range(n-2):
+#     print('*' + ' ' * 17 + '*')
+# print('*'*19)
+
+
+# Дано натуральное число. Напишите программу, которая вычисляет:
+#
+# количество цифр 3 в нем;
+# сколько раз в нем встречается последняя цифра;
+# количество четных цифр;
+# сумму его цифр, больших пяти;
+# произведение цифр, больших семи
+# (если цифр больших семи нет, то вывести 1,если такая цифра одна, то вывести ее);
+# сколько раз в нем встречается цифры 0 и 5 (всего суммарно).
+
 n = int(input())
-print('*'*19)
-for i in range(n-2):
-    print('*' + ' ' * 17 + '*')
-print('*'*19)
+count_sum_5 = 0
+count_3 = 0
+counter_last = n % 10
+couter_last_digit = 0
+count_7 = 1
+count_0_5 = 0
+count_chet = 0
+while n != 0:
+    a = n % 10
+    if a == 3:
+        count_3 += 1
+    if a == counter_last:
+        couter_last_digit += 1
+    if a %2 == 0:
+        count_chet += 1
+    if a > 5:
+        count_sum_5 += a
+    if a > 7 :
+        count_7 *= a
+    if a in (0, 5):
+        count_0_5 += 1
+    n //= 10
+print(count_3)
+print(couter_last_digit)
+print(count_chet)
+print(count_sum_5)
+print(count_7)
+print(count_0_5)
+
+
+
