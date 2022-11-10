@@ -28,24 +28,20 @@
 # Найдите все ошибки в этой программе (их может быть одна или несколько).
 # Известно, что каждая ошибка затрагивает только одну строку и может быть исправлена без изменения других строк.
 
-n = 8
-count = 0
-maximum = -10**12
-for i in range(1, n + 1):
-    x = int(input())
-    if x % 4 == 0:
-        count += 1
-        if x > maximum:
-            maximum = x
-if count > 0:
-    print(count)
-    print(maximum)
-else:
-    print('NO')
-
-
-
-
+# n = 8
+# count = 0
+# maximum = -10**12
+# for i in range(1, n + 1):
+#     x = int(input())
+#     if x % 4 == 0:
+#         count += 1
+#         if x > maximum:
+#             maximum = x
+# if count > 0:
+#     print(count)
+#     print(maximum)
+# else:
+#     print('NO')
 
 
 # Дано натуральное число n ,(n>99).
@@ -70,20 +66,19 @@ else:
 # Известно, что каждая ошибка затрагивает только одну строку
 # и может быть исправлена без изменения других строк.
 
-# n = 4
-# count = 0
-# maximum = 999
-# for i in range(1, n + 1):
-#     x = int(input())
-#     if x % 2 != 0:
-#         count += 1
-#         if x > maximum:
-#             maximum = i
-#             break
-# if count > 0:
-#     print(count)
-#     print(maximum)
-# else:
-#     print('NO')
+n = 4
+count = 0
+maximum = -10**8
+for i in range(1, n + 1):
+    x = int(input())
+    if x % 2 != 0:
+        count += 1
+        if x > maximum:
+            maximum = x
+if count > 0:
+    print(count)
+    print(maximum)
+else:
+    print('NO')
 
 
