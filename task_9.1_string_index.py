@@ -55,12 +55,27 @@
 # если строка содержит цифру.
 # В противном случае вывести сообщение «Цифр нет» (без кавычек).
 
+# string = input()
+# flag = 'Цифр нет'
+# for i in range(0, len(string)):
+#     if string[i] in '0123456789':
+#         flag = 'Цифра'
+#         break
+# print(flag)
+
+
+# На вход программе подается одна строка.
+# Напишите программу,
+# которая определяет сколько раз в строке встречаются символы + и *.
+
 string = input()
-flag = 'Цифр нет'
+count_plus = 0
+count_multi = 0
+
 for i in range(0, len(string)):
-    if string[i] in '0123456789':
-        flag = 'Цифра'
-        break
-print(flag)
-
-
+    if string[i] in '+':
+        count_plus += 1
+    elif string[i] in '*':
+        count_multi += 1
+print('Символ + встречается', count_plus, 'раз')
+print('Символ * встречается', count_multi, 'раз')
