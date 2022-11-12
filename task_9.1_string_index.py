@@ -68,14 +68,28 @@
 # Напишите программу,
 # которая определяет сколько раз в строке встречаются символы + и *.
 
-string = input()
-count_plus = 0
-count_multi = 0
+# string = input()
+# count_plus = 0
+# count_multi = 0
+#
+# for i in range(0, len(string)):
+#     if string[i] in '+':
+#         count_plus += 1
+#     elif string[i] in '*':
+#         count_multi += 1
+# print('Символ + встречается', count_plus, 'раз')
+# print('Символ * встречается', count_multi, 'раз')
 
-for i in range(0, len(string)):
-    if string[i] in '+':
-        count_plus += 1
-    elif string[i] in '*':
-        count_multi += 1
-print('Символ + встречается', count_plus, 'раз')
-print('Символ * встречается', count_multi, 'раз')
+
+# На вход программе подается одна строка.
+# Напишите программу, которая определяет сколько в ней одинаковых соседних символов.
+
+string = input()
+count = 0
+
+for i in range(len(string)-1):
+    if string[i] == string[i+1]:
+        count += 1
+print(count)
+
+
