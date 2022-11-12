@@ -34,7 +34,20 @@
 # имя, фамилия и отчество. Напишите программу,
 # которая выводит инициалы человека.
 
-family = input()
-name = input()
-father_name = input()
-print(name[0], family[0], father_name[0], sep='')
+# family = input()
+# name = input()
+# father_name = input()
+# print(name[0], family[0], father_name[0], sep='')
+
+
+# На вход программе подается одна строка состоящая из цифр.
+# Напишите программу, которая считает сумму цифр данной строки.
+
+nums = input()
+total = 0
+for i in range(0, len(nums)):
+    total = total + int(nums[i])
+print(total)
+
+
+
