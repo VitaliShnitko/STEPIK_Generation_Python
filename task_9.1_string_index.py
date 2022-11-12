@@ -7,6 +7,15 @@
 
 # Дополните приведенный код, используя индексатор, так чтобы он вывел символ w.
 
-s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+# s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+#
+# print(s[-10])
 
-print(s[-10])
+
+# На вход программе подается одна строка.
+# Напишите программу,
+# которая выводит элементы строки с индексами 0, 2, 4, ... в столбик.
+
+text = input()
+for i in range(0, len(text), 2):
+    print(text[i])
