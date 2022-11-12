@@ -96,16 +96,33 @@
 # На вход программе подается одна строка с буквами русского языка.
 # Напишите программу, которая определяет количество гласных и согласных букв.
 
-string = input().lower()
-count_glas = 0
-count_souglas = 0
+# string = input().lower()
+# count_glas = 0
+# count_souglas = 0
+#
+# for i in string:
+#     if i in 'ауоыиэяюёе':
+#         count_glas += 1
+#     elif i in 'бвгджзйклмнпрстфхцчшщ':
+#         count_souglas += 1
+# print('Количество гласных букв равно', count_glas)
+# print('Количество согласных букв равно', count_souglas)
 
-for i in string:
-    if i in 'ауоыиэяюёе':
-        count_glas += 1
-    elif i in 'бвгджзйклмнпрстфхцчшщ':
-        count_souglas += 1
-print('Количество гласных букв равно', count_glas)
-print('Количество согласных букв равно', count_souglas)
+
+# На вход программе подается натуральное число,
+# записанное в десятичной системе счисления.
+# Напишите программу, которая переводит данное число в двоичную систему счисления.
+
+num = int(input())
+ostatok = ''
+
+while num != 0:
+    num2 = num % 2
+    ostatok += str(num2)
+    num //= 2
+binary_number = ostatok[::-1]
+print(binary_number)
+
+
 
 
