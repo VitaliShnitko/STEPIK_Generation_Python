@@ -43,11 +43,24 @@
 # На вход программе подается одна строка состоящая из цифр.
 # Напишите программу, которая считает сумму цифр данной строки.
 
-nums = input()
-total = 0
-for i in range(0, len(nums)):
-    total = total + int(nums[i])
-print(total)
+# nums = input()
+# total = 0
+# for i in range(0, len(nums)):
+#     total = total + int(nums[i])
+# print(total)
 
+
+# На вход программе подается одна строка.
+# Напишите программу, которая выводит сообщение «Цифра» (без кавычек),
+# если строка содержит цифру.
+# В противном случае вывести сообщение «Цифр нет» (без кавычек).
+
+string = input()
+flag = 'Цифр нет'
+for i in range(0, len(string)):
+    if string[i] in '0123456789':
+        flag = 'Цифра'
+        break
+print(flag)
 
 
