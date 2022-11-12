@@ -84,12 +84,28 @@
 # На вход программе подается одна строка.
 # Напишите программу, которая определяет сколько в ней одинаковых соседних символов.
 
-string = input()
-count = 0
+# string = input()
+# count = 0
+#
+# for i in range(len(string)-1):
+#     if string[i] == string[i+1]:
+#         count += 1
+# print(count)
 
-for i in range(len(string)-1):
-    if string[i] == string[i+1]:
-        count += 1
-print(count)
+
+# На вход программе подается одна строка с буквами русского языка.
+# Напишите программу, которая определяет количество гласных и согласных букв.
+
+string = input().lower()
+count_glas = 0
+count_souglas = 0
+
+for i in string:
+    if i in 'ауоыиэяюёе':
+        count_glas += 1
+    elif i in 'бвгджзйклмнпрстфхцчшщ':
+        count_souglas += 1
+print('Количество гласных букв равно', count_glas)
+print('Количество согласных букв равно', count_souglas)
 
 
