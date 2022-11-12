@@ -25,6 +25,16 @@
 # Напишите программу,
 # которая выводит в столбик элементы строки в обратном порядке.
 
-text = input()
-for i in range(1, len(text)+1):
-    print(text[-i])
+# text = input()
+# for i in range(1, len(text)+1):
+#     print(text[-i])
+
+
+# На вход программе подаются три строки:
+# имя, фамилия и отчество. Напишите программу,
+# которая выводит инициалы человека.
+
+family = input()
+name = input()
+father_name = input()
+print(name[0], family[0], father_name[0], sep='')
