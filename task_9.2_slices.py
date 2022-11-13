@@ -46,18 +46,44 @@
 # строку в обратном порядке;
 # строку с удаленным первым и последним символом.
 
+# text = input()
+# len_text = len(text)
+# text_x3 = text*3
+# first_symbol_text = text[:1]
+# first_3_symbol_text = text[:3]
+# last_3_symbol = text[-3:]
+# revers_text = text[::-1]
+# del_first_last_symbol_text = text[1:-1]
+#
+# print(len_text, text_x3, first_symbol_text, first_3_symbol_text,
+#       last_3_symbol, revers_text, del_first_last_symbol_text, sep='\n')
+
+
+# На вход программе подается одна строка. Напишите программу, которая выводит:
+#
+# третий символ этой строки;
+# предпоследний символ этой строки;
+# первые пять символов этой строки;
+# всю строку, кроме последних двух символов;
+# все символы с четными индексами;
+# все символы с нечетными индексами;
+# все символы в обратном порядке;
+# все символы строки через один в обратном порядке, начиная с последнего.
+
 text = input()
-len_text = len(text)
-text_x3 = text*3
-first_symbol_text = text[:1]
-first_3_symbol_text = text[:3]
-last_3_symbol = text[-3:]
+
+trird_symbol_text = text[2:3]
+penultimate_symbol_text = text[-2:-1]
+first_5_symbol_text = text[:5]
+del_last_2_symbol = text[:-2]
+symbol_even_index_text = text[::2]
+symbol_odd_index_text = text[1::2]
 revers_text = text[::-1]
-del_first_last_symbol_text = text[1:-1]
+del_1_revers_text = text[-1::-2]
 
-print(len_text, text_x3, first_symbol_text, first_3_symbol_text,
-      last_3_symbol, revers_text, del_first_last_symbol_text, sep='\n')
-
+print(trird_symbol_text, penultimate_symbol_text, first_5_symbol_text,
+      del_last_2_symbol, symbol_even_index_text, symbol_odd_index_text,
+      revers_text, del_1_revers_text, sep='\n')
 
 
 
