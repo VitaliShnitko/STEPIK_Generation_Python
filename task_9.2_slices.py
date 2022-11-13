@@ -29,11 +29,34 @@
 # На вход программе подается одно слово, записанное в нижнем регистре.
 # Напишите программу, которая определяет является ли оно палиндромом.
 
+# text = input()
+# if text[::] == text[::-1]:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# На вход программе подается одна строка. Напишите программу, которая выводит:
+#
+# общее количество символов в строке;
+# исходную строку повторенную 3 раза;
+# первый символ строки;
+# первые три символа строки;
+# последние три символа строки;
+# строку в обратном порядке;
+# строку с удаленным первым и последним символом.
+
 text = input()
-if text[::] == text[::-1]:
-    print('YES')
-else:
-    print('NO')
+len_text = len(text)
+text_x3 = text*3
+first_symbol_text = text[:1]
+first_3_symbol_text = text[:3]
+last_3_symbol = text[-3:]
+revers_text = text[::-1]
+del_first_last_symbol_text = text[1:-1]
+
+print(len_text, text_x3, first_symbol_text, first_3_symbol_text,
+      last_3_symbol, revers_text, del_first_last_symbol_text, sep='\n')
 
 
 
