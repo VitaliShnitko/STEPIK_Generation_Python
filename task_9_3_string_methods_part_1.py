@@ -24,9 +24,21 @@
 # Текст имеет хороший оттенок, если содержит
 # подстроку «хорош» во всевозможных регистрах.
 
-text = input().lower()
-if 'хорош' in text:
-    print('YES')
-else:
-    print('NO')
+# text = input().lower()
+# if 'хорош' in text:
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# На вход программе подается строка.
+# Напишите программу, которая подсчитывает
+# количество буквенных символов в нижнем регистре.
+
+text, count = input(), 0
+for i in text:
+    if i != i.upper():
+        count += 1
+print(count)
+
 
