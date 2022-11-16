@@ -21,18 +21,37 @@
 # цитозина и тимина входит в данную строку генетического кода.
 
 # 1 решение
-text = input().lower()
-adenin, guanin, cetozin, timen = text.count('а'), text.count('г'), text.count('ц'), text.count('т')
-print('Аденин:', adenin)
-print('Гуанин:', guanin)
-print('Цитозин:', cetozin)
-print('Тимин:', timen)
+# text = input().lower()
+# adenin, guanin, cetozin, timen = text.count('а'), text.count('г'), text.count('ц'), text.count('т')
+# print('Аденин:', adenin)
+# print('Гуанин:', guanin)
+# print('Цитозин:', cetozin)
+# print('Тимин:', timen)
+#
+# # 2 решение
+# s = input().upper()
+# print(f"Аденин: {s.count('А')}")
+# print(f"Гуанин: {s.count('Г')}")
+# print(f"Цитозин: {s.count('Ц')}")
+# print(f"Тимин: {s.count('Т')}")
 
-# 2 решение
-s = input().upper()
-print(f"Аденин: {s.count('А')}")
-print(f"Гуанин: {s.count('Г')}")
-print(f"Цитозин: {s.count('Ц')}")
-print(f"Тимин: {s.count('Т')}")
+
+# Джим Хоппер с помощью радиоприемника пытается получить сообщение Оди.
+# На приемник ему поступает n различных последовательностей кода Морзе.
+# Декодировав их, он получает последовательности из цифр и строчного латинского алфавита,
+# при этом во всех сообщениях Оди содержится число 11, причем минимум 3 раза.
+# Помогите определить Джиму количество сообщений от Оди.
+
+count_string = int(input())     #вводим число строк
+count_11 = 0                    #счетчик числа 11
+for i in range(count_string):   #заводим цикл
+    text = input()              #вводим строки
+    if text.count('11') >= 3:   #если число 11 встречается больше либо равно 3 то,
+        count_11 += 1           #счетчик + 1
+print(count_11)                 #выводим количество
+
+
+
+
 
 
