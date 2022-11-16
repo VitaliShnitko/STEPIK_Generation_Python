@@ -54,20 +54,29 @@
 # На вход программе подается строка текста.
 # Напишите программу, которая подсчитывает количество цифр в данной строке.
 
-# 1 решение
+# # 1 решение
+# text = input()
+# digit_counter = 0
+# for i in text:
+#     if i.isdigit():
+#         digit_counter += 1
+# print(digit_counter)
+#
+# # 2 решение
+# n = input()
+# count = 0
+# for i in range(10):
+#     count += n.count(str(i))
+# print(count)
+
+
+# На вход программе подается строка текста.
+# Напишите программу, которая проверяет,
+# что строка заканчивается подстрокой .com или .ru.
+
 text = input()
-digit_counter = 0
-for i in text:
-    if i.isdigit():
-        digit_counter += 1
-print(digit_counter)
-
-# 2 решение
-n = input()
-count = 0
-for i in range(10):
-    count += n.count(str(i))
-print(count)
-
-
+if text.endswith('.com') or text.endswith('.ru'):
+    print('YES')
+else:
+    print('NO')
 
