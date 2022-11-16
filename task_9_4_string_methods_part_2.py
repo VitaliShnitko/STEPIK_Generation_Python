@@ -74,9 +74,23 @@
 # Напишите программу, которая проверяет,
 # что строка заканчивается подстрокой .com или .ru.
 
+# text = input()
+# if text.endswith('.com') or text.endswith('.ru'):
+#     print('YES')
+# else:
+#     print('NO')
+
+
+# На вход программе подается строка текста.
+# Напишите программу, которая выводит на экран символ,
+# который появляется наиболее часто.
+
 text = input()
-if text.endswith('.com') or text.endswith('.ru'):
-    print('YES')
-else:
-    print('NO')
+max_count = 0
+symbol = 0
+for i in text:
+    if text.count(i) >= max_count:
+        max_count = text.count(i)
+        symbol = i
+print(symbol)
 
