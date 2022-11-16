@@ -101,10 +101,21 @@
 # разделенных символом пробела.
 # Если буква «f» в данной строке не встречается, следует вывести «NO».
 
-text = input()
-if text.count('f') == 1:
-    print(text.find('f'))
-elif text.count('f') >= 2:
-    print(text.find('f'), text.rfind('f'))
-else:
-    print('NO')
+# text = input()
+# if text.count('f') == 1:
+#     print(text.find('f'))
+# elif text.count('f') >= 2:
+#     print(text.find('f'), text.rfind('f'))
+# else:
+#     print('NO')
+
+
+# На вход программе подается строка текста, в которой буква «h» встречается минимум два раза.
+# Напишите программу, которая удаляет из этой строки первое и последнее вхождение буквы «h»,
+# а также все символы, находящиеся между ними.
+
+
+s = input()
+print(s[:s.find('h')] + s[s.rfind('h')+1:])
+
+
