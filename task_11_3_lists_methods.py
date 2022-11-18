@@ -38,7 +38,19 @@
 #
 # ['a', 'bb', 'ccc', 'dddd', 'eeeee', 'ffffff', ...]
 
-l = []
-for i in range(26):
-    l.append(chr(ord('a') + i) * (i + 1))
-print(l)
+# l = []
+# for i in range(26):
+#     l.append(chr(ord('a') + i) * (i + 1))
+# print(l)
+
+# На вход программе подается натуральное число nn, а затем n целых чисел.
+# Напишите программу, которая создает из указанных чисел список их кубов.
+
+# n = int(input())
+# l = []
+#
+# while n > 0:
+#     num = int(input())
+#     l.append(int(num) ** 3)
+#     n -= 1
+# print(l)
