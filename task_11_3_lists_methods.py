@@ -87,12 +87,41 @@
 # Напишите программу, которая создает из указанных чисел список,
 # затем удаляет все элементы стоящие по нечетным индексам, а затем выводит полученный список.
 
+# n = int(input())
+# l1 = []
+# for i in range(n):
+#     l1.append(int(input()))
+# del l1[1::2]
+# print(l1)
+
+
+# На вход программе подается натуральное число nn и nn строк, а затем число k.
+# Напишите программу, которая выводит k-ую букву из введенных строк на одной строке без пробелов.
+
+# n = int(input())
+# l = [input() for i in range(n)]
+# k = int(input())
+# for j in range(n):
+#     l2 = []
+#     l2.extend(l[j])
+# print(l2[k-1] if k <= len(l2) else '', end='')
+
 n = int(input())
 l1 = []
 for i in range(n):
-    l1.append(int(input()))
-del l1[1::2]
-print(l1)
+    l1.append(input())
+k = int(input())
+str1 = ''
+str2 = ''
+for j in range(n):
+    if len(l1[j]) >= k:
+        str1 = l1[j][k-1]
+        str2 += str1
+print(str2)
+
+
+
+
 
 
 
