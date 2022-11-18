@@ -106,18 +106,27 @@
 #     l2.extend(l[j])
 # print(l2[k-1] if k <= len(l2) else '', end='')
 
+# n = int(input())
+# l1 = []
+# for i in range(n):
+#     l1.append(input())
+# k = int(input())
+# str1 = ''
+# str2 = ''
+# for j in range(n):
+#     if len(l1[j]) >= k:
+#         str1 = l1[j][k-1]
+#         str2 += str1
+# print(str2)
+
+# На вход программе подается натуральное число n, а затем nn строк.
+# Напишите программу, которая создает список из символов всех строк, а затем выводит его.
+
 n = int(input())
 l1 = []
 for i in range(n):
-    l1.append(input())
-k = int(input())
-str1 = ''
-str2 = ''
-for j in range(n):
-    if len(l1[j]) >= k:
-        str1 = l1[j][k-1]
-        str2 += str1
-print(str2)
+    l1.extend(input())
+print(l1)
 
 
 
