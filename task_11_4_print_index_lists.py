@@ -1,8 +1,26 @@
 # Дополните приведенный код, так чтобы он вывел сумму квадратов элементов списка numbers.
 
-numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
-summa = 0
-for i in numbers:
-    multi = i ** 2
-    summa += multi
-print(summa)
+# numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
+# summa = 0
+# for i in numbers:
+#     multi = i ** 2
+#     summa += multi
+# print(summa)
+
+
+# На вход программе подается натуральное число nn, а затем n целых чисел.
+# Напишите программу, которая для каждого введенного числа x
+# выводит значение функции f(x) = x^2 + 2x + 1, каждое на отдельной строке.
+
+
+n = int(input())
+l1 = []
+l2 = []
+for i in range(n):
+    l1.append(int(input()))
+for i in l1:
+    l2.append(i ** 2 + 2 * i + 1)
+print(*l1, sep='\n')
+print()
+print(*l2, sep='\n')
+
