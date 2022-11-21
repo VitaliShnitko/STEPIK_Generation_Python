@@ -21,10 +21,21 @@
 # Из данной строки формируется список чисел.
 # Напишите программу, которая меняет местами минимальный и максимальный элемент этого списка.
 
-s = input().split()
-s = [int(i) for i in s] # преобразование списка строк в список чисел
-max_s = s.index(max(s))
-min_s = s.index(min(s))
-s[max_s], s[min_s] = s[min_s], s[max_s]
-print(*s)
+# s = input().split()
+# s = [int(i) for i in s] # преобразование списка строк в список чисел
+# max_s = s.index(max(s))
+# min_s = s.index(min(s))
+# s[max_s], s[min_s] = s[min_s], s[max_s]
+# print(*s)
 
+
+# На вход программе подается строка, содержащая английский текст.
+# Напишите программу, которая подсчитывает общее количество артиклей: 'a', 'an', 'the'.
+
+text = input().lower().split()
+
+count_a = text.count('a')
+count_an = text.count('an')
+count_the = text.count('the')
+total = count_a + count_an + count_the
+print('Общее количество артиклей:', total)
