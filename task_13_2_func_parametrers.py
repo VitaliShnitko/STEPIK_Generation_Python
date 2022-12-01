@@ -31,12 +31,30 @@
 # а затем выводит на печать ФИО человека.
 
 
+# # объявление функции
+# def print_fio(name, surname, patronymic):
+#     print(surname[0].upper(), name[0].upper(), patronymic[0].upper(), sep='')
+#
+# # считываем данные
+# name, surname, patronymic = input(), input(), input()
+#
+# # вызываем функцию
+# print_fio(name, surname, patronymic)
+
+
+# Напишите функцию print_digit_sum(),
+# которая принимает одно целое число num и выводит на печать сумму его цифр.
+
 # объявление функции
-def print_fio(name, surname, patronymic):
-    print(surname[0].upper(), name[0].upper(), patronymic[0].upper(), sep='')
+def print_digit_sum(num):
+    suma = 0
+    while num > 0:
+        suma += num % 10
+        num //= 10
+    print(suma)
 
 # считываем данные
-name, surname, patronymic = input(), input(), input()
+n = int(input())
 
 # вызываем функцию
-print_fio(name, surname, patronymic)
+print_digit_sum(n)
