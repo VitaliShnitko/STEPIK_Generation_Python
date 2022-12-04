@@ -37,17 +37,35 @@
 # принимающую в качестве аргумента натуральное число и
 # возвращающую список всех делителей данного числа.
 
+# # объявление функции
+# def get_factors(num):
+#     delitel = []
+#     for i in range(1, num+1):
+#         if num % i == 0:
+#             delitel.append(i)
+#     return delitel
+#
+# # считываем данные
+# n = int(input())
+#
+# # вызываем функцию
+# print(get_factors(n))
+
+
+# Напишите функцию number_of_factors(num),
+# принимающую в качестве аргумента число и
+# возвращающую количество делителей данного числа.
+
 # объявление функции
-def get_factors(num):
-    delitel = []
+def number_of_factors(num):
+    count = 0
     for i in range(1, num+1):
         if num % i == 0:
-            delitel.append(i)
-    return delitel
+            count += 1
+    return count
 
 # считываем данные
 n = int(input())
 
 # вызываем функцию
-print(get_factors(n))
-
+print(number_of_factors(n))
