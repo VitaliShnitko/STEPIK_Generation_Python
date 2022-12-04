@@ -80,17 +80,34 @@
 # строку target и символ symbol и возвращает список,
 # содержащий все местоположения этого символа в строке.
 
+# # объявление функции
+# def find_all(target, symbol):
+#     l = []
+#     for i in range(len(target)):
+#         if target[i] == symbol:
+#             l.append(i)
+#     return l
+#
+# # считываем данные
+# s = input()
+# char = input()
+#
+# # вызываем функцию
+# print(find_all(s, char))
+
+
+# Напишите функцию merge(list1, list2),
+# которая принимает в качестве аргументов два отсортированных по возрастанию списка,
+# состоящих из целых чисел, и объединяет их в один отсортированный список.
+
 # объявление функции
-def find_all(target, symbol):
-    l = []
-    for i in range(len(target)):
-        if target[i] == symbol:
-            l.append(i)
+def merge(list1, list2):
+    l = sorted(list1 + list2)
     return l
 
 # считываем данные
-s = input()
-char = input()
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
 
 # вызываем функцию
-print(find_all(s, char))
+print(merge(numbers1, numbers2))
