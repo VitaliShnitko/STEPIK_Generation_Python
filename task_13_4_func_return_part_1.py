@@ -56,16 +56,41 @@
 # принимающую в качестве аргумента число и
 # возвращающую количество делителей данного числа.
 
+# # объявление функции
+# def number_of_factors(num):
+#     count = 0
+#     for i in range(1, num+1):
+#         if num % i == 0:
+#             count += 1
+#     return count
+#
+# # считываем данные
+# n = int(input())
+#
+# # вызываем функцию
+# print(number_of_factors(n))
+
+
+# Напомним, что строковый метод find('a') возвращает
+# местоположение первого вхождения символа a в строке.
+# Проблема заключается в том, что данный метод не находит местоположение всех символов а.
+#
+# Напишите функцию с именем find_all(target, symbol),
+# которая принимает два аргумента:
+# строку target и символ symbol и возвращает список,
+# содержащий все местоположения этого символа в строке.
+
 # объявление функции
-def number_of_factors(num):
-    count = 0
-    for i in range(1, num+1):
-        if num % i == 0:
-            count += 1
-    return count
+def find_all(target, symbol):
+    l = []
+    for i in range(len(target)):
+        if target[i] == symbol:
+            l.append(i)
+    return l
 
 # считываем данные
-n = int(input())
+s = input()
+char = input()
 
 # вызываем функцию
-print(number_of_factors(n))
+print(find_all(s, char))
