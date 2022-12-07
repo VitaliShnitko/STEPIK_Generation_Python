@@ -74,30 +74,74 @@
 # возвращает значение True если указанный текст является
 # палиндромом и False в противном случае.
 
-# 1способ решения
-def is_palindrome(text):
-    if text.lower() == text[::-1].lower():
-        return True
-    else:
-        text1 = "".join(i for i in text if i.isalpha())
-        if text1.lower() == text1[::-1].lower():
-            return True
-        else:
-            return False
-# считываем данные
-txt = input()
+# # 1способ решения
+# def is_palindrome(text):
+#     if text.lower() == text[::-1].lower():
+#         return True
+#     else:
+#         text1 = "".join(i for i in text if i.isalpha())
+#         if text1.lower() == text1[::-1].lower():
+#             return True
+#         else:
+#             return False
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(is_palindrome(txt))
+#
+# # 2способ решения
+# # объявление функции
+# def is_palindrome(text):
+#     text = [i.lower() for i in text if i.isalpha()]
+#     return text == text[::-1]
+#
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(is_palindrome(txt))
 
-# вызываем функцию
-print(is_palindrome(txt))
 
-# 2способ решения
+# BEEGEEK наконец открыл свой банк в котором
+# используются специальные банкоматы с необычным паролем.
+#
+# Действительный пароль BEEGEEK банка имеет вид a:b:c,
+# где a, b и c – натуральные числа.
+# Поскольку основатель BEEGEEK фанатеет от математики, то он решил:
+#
+# число a – должно быть палиндромом;
+# число b – должно быть простым;
+# число c – должно быть четным.
+# Напишите функцию is_valid_password(password),
+# которая принимает в качестве аргумента строковое значение
+# пароля password и возвращает значение True если пароль
+# является действительным паролем BEEGEEK банка и False в противном случае.
+
 # объявление функции
-def is_palindrome(text):
-    text = [i.lower() for i in text if i.isalpha()]
-    return text == text[::-1]
+def is_valid_password(password):
+    password = password.split(':')
+    if len(password) != 3:
+        return False
+    a = password[0]
+    b = password[1]
+    c = password[2]
+    if a.isalpha() or b.isalpha() or c.isalpha():
+        return False
+    if a != a[::-1] or int(c) % 2 != 0:
+        return False
+    d = int(b)
+    if d < 2:
+        return False
+    for i in range(2, d):
+        if d % i == 0:
+            return False
+    return True
+
+
 
 # считываем данные
-txt = input()
+psw = input()
 
 # вызываем функцию
-print(is_palindrome(txt))
+print(is_valid_password(psw))
