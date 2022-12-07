@@ -46,24 +46,58 @@
 # и возвращает значение True если слова имеют одинаковую длину
 # и отличаются ровно в 1 символе и False в противном случае.
 
-# объявление функции
-def is_one_away(word1, word2):
-    count = 0
-    if len(word1) == len(word2):
-        for i in range(0, len(word1)):
-            if word1[i] == word2[i]:
-                count += 1
-        if len(word1) - count == 1:
+# # объявление функции
+# def is_one_away(word1, word2):
+#     count = 0
+#     if len(word1) == len(word2):
+#         for i in range(0, len(word1)):
+#             if word1[i] == word2[i]:
+#                 count += 1
+#         if len(word1) - count == 1:
+#             return True
+#         else:
+#             return False
+#
+#     else:
+#         return False
+#
+# # считываем данные
+# txt1 = input()
+# txt2 = input()
+#
+# # вызываем функцию
+# print(is_one_away(txt1, txt2))
+
+
+# Напишите функцию is_palindrome(text),
+# которая принимает в качестве аргумента строку text и
+# возвращает значение True если указанный текст является
+# палиндромом и False в противном случае.
+
+# 1способ решения
+def is_palindrome(text):
+    if text.lower() == text[::-1].lower():
+        return True
+    else:
+        text1 = "".join(i for i in text if i.isalpha())
+        if text1.lower() == text1[::-1].lower():
             return True
         else:
             return False
-
-    else:
-        return False
-
 # считываем данные
-txt1 = input()
-txt2 = input()
+txt = input()
 
 # вызываем функцию
-print(is_one_away(txt1, txt2))
+print(is_palindrome(txt))
+
+# 2способ решения
+# объявление функции
+def is_palindrome(text):
+    text = [i.lower() for i in text if i.isalpha()]
+    return text == text[::-1]
+
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_palindrome(txt))
