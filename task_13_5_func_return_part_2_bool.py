@@ -22,20 +22,48 @@
 # и возвращает значение True если число является простым и False в противном случае.
 
 # объявление функции
-def is_prime(num):
-    flag = True
-    for i in range(2, num):
-        if num % i == 0:  # если исходное число делится на какое-либо отличное от 1 и самого себя
-            flag = False
-    if num == 1:
-        return False
-    elif flag == True:
-        return  True
+# def is_prime(num):
+#     flag = True
+#     for i in range(2, num):
+#         if num % i == 0:  # если исходное число делится на какое-либо отличное от 1 и самого себя
+#             flag = False
+#     if num == 1:
+#         return False
+#     elif flag == True:
+#         return  True
+#     else:
+#         return False
+#
+# # считываем данные
+# n = int(input())
+#
+# # вызываем функцию
+# print(is_prime(n))
+
+
+# Напишите функцию is_one_away(word1, word2),
+# которая принимает в качестве аргументов два слова word1 и word2
+# и возвращает значение True если слова имеют одинаковую длину
+# и отличаются ровно в 1 символе и False в противном случае.
+
+# объявление функции
+def is_one_away(word1, word2):
+    count = 0
+    if len(word1) == len(word2):
+        for i in range(0, len(word1)):
+            if word1[i] == word2[i]:
+                count += 1
+        if len(word1) - count == 1:
+            return True
+        else:
+            return False
+
     else:
         return False
 
 # считываем данные
-n = int(input())
+txt1 = input()
+txt2 = input()
 
 # вызываем функцию
-print(is_prime(n))
+print(is_one_away(txt1, txt2))
