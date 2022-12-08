@@ -118,30 +118,51 @@
 # пароля password и возвращает значение True если пароль
 # является действительным паролем BEEGEEK банка и False в противном случае.
 
-# объявление функции
-def is_valid_password(password):
-    password = password.split(':')
-    if len(password) != 3:
-        return False
-    a = password[0]
-    b = password[1]
-    c = password[2]
-    if a.isalpha() or b.isalpha() or c.isalpha():
-        return False
-    if a != a[::-1] or int(c) % 2 != 0:
-        return False
-    d = int(b)
-    if d < 2:
-        return False
-    for i in range(2, d):
-        if d % i == 0:
-            return False
-    return True
+# # объявление функции
+# def is_valid_password(password):
+#     password = password.split(':')
+#     if len(password) != 3:
+#         return False
+#     a = password[0]
+#     b = password[1]
+#     c = password[2]
+#     if a.isalpha() or b.isalpha() or c.isalpha():
+#         return False
+#     if a != a[::-1] or int(c) % 2 != 0:
+#         return False
+#     d = int(b)
+#     if d < 2:
+#         return False
+#     for i in range(2, d):
+#         if d % i == 0:
+#             return False
+#     return True
+#
+# # считываем данные
+# psw = input()
+#
+# # вызываем функцию
+# print(is_valid_password(psw))
 
+
+# Напишите функцию convert_to_python_case(text),
+# которая принимает в качестве аргумента строку
+# в «верблюжьем регистре» и преобразует его в «змеиный регистр».
+
+# объявление функции
+def convert_to_python_case(text):
+    list1 = []
+    for i in range(0, len(text)):
+        if text[i].isupper():
+            list1.append('_')
+        if text[i].lower():
+            list1.append(text[i].lower())
+    list1 = ''.join(list1[1:])
+    return list1
 
 
 # считываем данные
-psw = input()
+txt = input()
 
 # вызываем функцию
-print(is_valid_password(psw))
+print(convert_to_python_case(txt))
