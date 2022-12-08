@@ -200,30 +200,46 @@
 # он содержит хотя бы одну цифру.
 
 # объявление функции
-def is_password_good(password):
-    if len(password) < 8:
-        return False
-    upp = False
-    low = False
-    dig = False
-    for i in range(0, len(password)):
-        if password[i].isupper():
-            upp = True
-        elif password[i].islower():
-            low = True
-        elif password[i].isdigit():
-            dig = True
-    if upp*low*dig == 1:
-        return True
-    else:
-        return False
+# def is_password_good(password):
+#     if len(password) < 8:
+#         return False
+#     upp = False
+#     low = False
+#     dig = False
+#     for i in range(0, len(password)):
+#         if password[i].isupper():
+#             upp = True
+#         elif password[i].islower():
+#             low = True
+#         elif password[i].isdigit():
+#             dig = True
+#     if upp*low*dig == 1:
+#         return True
+#     else:
+#         return False
+#
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(is_password_good(txt))
 
+# Напишите функцию get_next_prime(num),
+# которая принимает в качестве аргумента натуральное число
+# num и возвращает первое простое число большее числа num.
 
+# объявление функции
+def get_next_prime(num):
+    num += 1
+    for i in range(2, num):
+        if num % i == 0:
+            return get_next_prime(num)
+    return num
 
 # считываем данные
-txt = input()
+n = int(input())
 
 # вызываем функцию
-print(is_password_good(txt))
+print(get_next_prime(n))
 
 
