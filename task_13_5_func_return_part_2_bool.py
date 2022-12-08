@@ -150,19 +150,40 @@
 # в «верблюжьем регистре» и преобразует его в «змеиный регистр».
 
 # объявление функции
-def convert_to_python_case(text):
-    list1 = []
-    for i in range(0, len(text)):
-        if text[i].isupper():
-            list1.append('_')
-        if text[i].lower():
-            list1.append(text[i].lower())
-    list1 = ''.join(list1[1:])
-    return list1
+# def convert_to_python_case(text):
+#     list1 = []
+#     for i in range(0, len(text)):
+#         if text[i].isupper():
+#             list1.append('_')
+#         if text[i].lower():
+#             list1.append(text[i].lower())
+#     list1 = ''.join(list1[1:])
+#     return list1
+#
+#
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(convert_to_python_case(txt))
 
 
-# считываем данные
-txt = input()
+# Напишите функцию is_correct_bracket(text), которая принимает
+# в качестве аргумента непустую строку text, состоящую из символов
+# ( и ) и возвращает значение True если поступившая на вход строка
+# является правильной скобочной последовательностью и False в противном случае.
 
-# вызываем функцию
-print(convert_to_python_case(txt))
+# объявление функции
+# def is_correct_bracket(text):
+#     while '()' in text:
+#         text = text.replace('()','')
+#     return not text
+#
+#
+# # считываем данные
+# txt = input()
+#
+# # вызываем функцию
+# print(is_correct_bracket(txt))
+
+
