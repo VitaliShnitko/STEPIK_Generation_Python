@@ -24,16 +24,41 @@
 # длину окружности и площадь круга, ограниченного данной окружностью.
 
 
-import math
-# объявление функции
-def get_circle(radius):
-    c = 2 * math.pi * radius
-    s = math.pi * (radius ** 2)
-    return c, s
+# import math
+# # объявление функции
+# def get_circle(radius):
+#     c = 2 * math.pi * radius
+#     s = math.pi * (radius ** 2)
+#     return c, s
+#
+# # считываем данные
+# r = float(input())
+#
+# # вызываем функцию
+# length, square = get_circle(r)
+# print(length, square)
 
+
+# Напишите функцию solve(a, b, c), которая принимает в качестве
+# аргументов три целых числа a, b, c – коэффициенты квадратного уравнения
+# ax2+bx+c=0 и возвращает его корни в порядке возрастания.
+
+# объявление функции
+def solve(a, b, c):
+    d = (b ** 2) - (4 * a * c)
+    if d > 0:
+        x1 = (-b + d ** 0.5) / (2 * a)
+        x2 = (-b - d ** 0.5) / (2 * a)
+        if x1 < x2:
+            return x1, x2
+        else:
+            return x2, x1
+    elif d == 0:
+        x = -(b / (2 * a))
+        return x, x
 # считываем данные
-r = float(input())
+a, b, c = int(input()), int(input()), int(input())
 
 # вызываем функцию
-length, square = get_circle(r)
-print(length, square)
+x1, x2 = solve(a, b, c)
+print(x1, x2)
