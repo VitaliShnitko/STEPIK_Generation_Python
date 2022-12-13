@@ -16,18 +16,35 @@
 # которая принимает в качестве аргумента натуральное число
 # quantity – количество товаров в заказе и возвращает стоимость доставки.
 
+# # объявление функции
+# def get_shipping_cost(quantity):
+#     total = 1000
+#     if quantity == 1:
+#         return total
+#     else:
+#         total = total + ((n-1) * 120)
+#         return total
+#
+#
+# # считываем данные
+# n = int(input())
+#
+# # вызываем функцию
+# print(get_shipping_cost(n))
+
+
+# Магическая дата – это дата, когда день, умноженный на месяц,
+# равен числу образованному последними двумя цифрами года.
+# Напишите функцию, is_magic(date) которая принимает в качестве
+# аргумента строковое представление корректой даты и возвращает
+# значение True если дата является магической и False в противном случае.
+
 # объявление функции
-def get_shipping_cost(quantity):
-    total = 1000
-    if quantity == 1:
-        return total
-    else:
-        total = total + ((n-1) * 120)
-        return total
-
-
+def is_magic(date):
+    date_lst = date.split('.')
+    return int(date_lst[0]) * int(date_lst[1]) == int(date_lst[2]) % 100
 # считываем данные
-n = int(input())
+date = input()
 
 # вызываем функцию
-print(get_shipping_cost(n))
+print(is_magic(date))
