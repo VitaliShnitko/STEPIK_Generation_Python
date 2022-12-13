@@ -75,19 +75,39 @@
 # на русском или английском языке.
 
 # объявление функции
-def get_month(language, number):
-    lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь',
-              'декабрь']
-    lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
-              'november', 'december']
-    if language == 'ru':
-        print(lng_ru[number - 1])
-    elif language == 'en':
-        print(lng_en[number - 1])
+# def get_month(language, number):
+#     lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь',
+#               'декабрь']
+#     lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
+#               'november', 'december']
+#     if language == 'ru':
+#         print(lng_ru[number - 1])
+#     elif language == 'en':
+#         print(lng_en[number - 1])
+# считываем данные
+# lan = input()
+# num = int(input())
+#
+# # вызываем функцию
+# get_month(lan, num)
 
-    # считываем данные
-lan = input()
-num = int(input())
+
+# Панграмма – это фраза, содержащая в себе все буквы алфавита.
+# Обычно панграммы используют для презентации шрифтов, чтобы
+# можно было в одной фразе рассмотреть все глифы.
+#
+# Напишите функцию, is_pangram(text) которая принимает в качестве
+# аргумента строку текста на английском языке и возвращает значение True
+# если текст является панграммой и False в противном случае.
+
+# объявление функции
+def is_pangram(text):
+    text1 = set(text.lower())
+    return len(text1) == 27
+
+
+# считываем данные
+text = input()
 
 # вызываем функцию
-get_month(lan, num)
+print(is_pangram(text))
