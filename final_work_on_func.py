@@ -55,15 +55,39 @@
 # числа n и k и возвращает значение биномиального коэффициента
 
 
-# объявление функции
-import math
-def compute_binom(n, k):
-    total = int(math.factorial(n) / (math.factorial(k) * math.factorial(n - k)))
-    return total
+# # объявление функции
+# import math
+# def compute_binom(n, k):
+#     total = int(math.factorial(n) / (math.factorial(k) * math.factorial(n - k)))
+#     return total
+#
+# # считываем данные
+# n = int(input())
+# k = int(input())
+#
+# # вызываем функцию
+# print(compute_binom(n, k))
 
-# считываем данные
-n = int(input())
-k = int(input())
+
+# Напишите функцию get_month(language, number),
+# которая принимает на вход два аргумента language – язык ru или en
+# и number – номер месяца (от 1 до 12) и возвращает название месяца
+# на русском или английском языке.
+
+# объявление функции
+def get_month(language, number):
+    lng_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь',
+              'декабрь']
+    lng_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
+              'november', 'december']
+    if language == 'ru':
+        print(lng_ru[number - 1])
+    elif language == 'en':
+        print(lng_en[number - 1])
+
+    # считываем данные
+lan = input()
+num = int(input())
 
 # вызываем функцию
-print(compute_binom(n, k))
+get_month(lan, num)
