@@ -39,12 +39,31 @@
 # аргумента строковое представление корректой даты и возвращает
 # значение True если дата является магической и False в противном случае.
 
+# # объявление функции
+# def is_magic(date):
+#     date_lst = date.split('.')
+#     return int(date_lst[0]) * int(date_lst[1]) == int(date_lst[2]) % 100
+# # считываем данные
+# date = input()
+#
+# # вызываем функцию
+# print(is_magic(date))
+
+
+# Напишите функцию compute_binom(n, k),
+# которая принимает в качестве аргументов два натуральных
+# числа n и k и возвращает значение биномиального коэффициента
+
+
 # объявление функции
-def is_magic(date):
-    date_lst = date.split('.')
-    return int(date_lst[0]) * int(date_lst[1]) == int(date_lst[2]) % 100
+import math
+def compute_binom(n, k):
+    total = int(math.factorial(n) / (math.factorial(k) * math.factorial(n - k)))
+    return total
+
 # считываем данные
-date = input()
+n = int(input())
+k = int(input())
 
 # вызываем функцию
-print(is_magic(date))
+print(compute_binom(n, k))
