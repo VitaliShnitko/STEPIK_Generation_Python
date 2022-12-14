@@ -20,14 +20,17 @@ def input_num():
         else:
             print('А может быть всё-таки введем целое число от 1 до 100?')
 def compare_num():
+    count = 0
     while True:
         n = input_num()
         if n < rand_num:
             print('Ваше число меньше загаданного, попробуйте еще разок')
+            count += 1
         elif n > rand_num:
             print('Ваше число больше загаданного, попробуйте еще разок')
+            count += 1
         else:
-            print('Вы угадали, поздравляем!')
+            print(f'Вы угадали, поздравляем! Количество попыток: {count}')
             break
 compare_num()
 
