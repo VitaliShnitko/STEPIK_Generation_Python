@@ -9,14 +9,13 @@
 from random import randint
 
 print('Добро пожаловать в числовую угадайку')
-num = int(input('Введите правую границу для случайного выбора числа:'))
+num = int(input('Введите правую границу для случайного выбора числа: '))
 rand_num = randint(1, num)
 def is_valid(s):
     return s.isdigit() and 1 <= int(s) <= num
-
 def input_num():
     while True:
-        guess = input(f'Введите число от 1 до {num}:')
+        guess = input(f'Введите число от 1 до {num}: ')
         if is_valid(guess):
             return int(guess)
         else:
@@ -34,20 +33,18 @@ def compare_num():
         else:
             print(f'Вы угадали, поздравляем! Количество попыток: {count}')
             break
-compare_num()
 
-print('Добро пожаловать в числовую угадайку')
-num = int(input('Введите правую границу для случайного выбора числа:'))
-rand_num = randint(1, num)
-compare_num()
-
-
-
-
-
-
-
-
+while True:
+    compare_num()
+    print('Отличная игра, еще раз?')
+    answer = input('Ведите "ДA" или "YES" если желаете продолжить: ')
+    if answer.upper() or answer.lower() in ('да', 'yes', 'YES', 'ДА'):
+        print('Добро пожаловать в числовую угадайку')
+        num = int(input('Введите правую границу для случайного выбора числа: '))
+        rand_num = randint(1, num)
+    else:
+        break
+print('Благодарим за игру!')
 
 # Тимур загадал число от 1 до n.
 # За какое наименьшее количество вопросов (на которые Тимур отвечает "больше" или "меньше")
