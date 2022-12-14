@@ -6,6 +6,35 @@
 # Если пользователь угадывает число, то программа должна
 # поздравить его и вывести сообщение 'Вы угадали, поздравляем!'.
 
+from random import randint
+rand_num = randint(1, 100)
+print('Добро пожаловать в числовую угадайку')
+def is_valid(s):
+    return s.isdigit() and 1 <= int(s) <= 100
+
+def input_num():
+    while True:
+        guess = input('Введите число от 1 до 100:')
+        if is_valid(guess):
+            return int(guess)
+        else:
+            print('А может быть всё-таки введем целое число от 1 до 100?')
+def compare_num():
+    while True:
+        n = input_num()
+        if n < rand_num:
+            print('Ваше число меньше загаданного, попробуйте еще разок')
+        elif n > rand_num:
+            print('Ваше число больше загаданного, попробуйте еще разок')
+        else:
+            print('Вы угадали, поздравляем!')
+            break
+compare_num()
+
+
+
+
+
 
 
 
@@ -15,16 +44,16 @@
 # Руслан может гарантированно угадать число Тимура?
 from random import randint
 
-# 1 решение
-n = int(input())
-count = 0
-while n != 1:
-    if n % 2 != 0:
-        n += 1
-    n //= 2
-    count += 1
-print(count)
-
-# 2 решение
-from math import log2, ceil
-print (ceil(log2(int(input()))))
+# # 1 решение
+# n = int(input())
+# count = 0
+# while n != 1:
+#     if n % 2 != 0:
+#         n += 1
+#     n //= 2
+#     count += 1
+# print(count)
+#
+# # 2 решение
+# from math import log2, ceil
+# print (ceil(log2(int(input()))))
