@@ -7,18 +7,20 @@
 # поздравить его и вывести сообщение 'Вы угадали, поздравляем!'.
 
 from random import randint
-rand_num = randint(1, 100)
+
 print('Добро пожаловать в числовую угадайку')
+num = int(input('Введите правую границу для случайного выбора числа:'))
+rand_num = randint(1, num)
 def is_valid(s):
-    return s.isdigit() and 1 <= int(s) <= 100
+    return s.isdigit() and 1 <= int(s) <= num
 
 def input_num():
     while True:
-        guess = input('Введите число от 1 до 100:')
+        guess = input(f'Введите число от 1 до {num}:')
         if is_valid(guess):
             return int(guess)
         else:
-            print('А может быть всё-таки введем целое число от 1 до 100?')
+            print(f'А может быть всё-таки введем целое число от 1 до {num}?')
 def compare_num():
     count = 0
     while True:
@@ -34,9 +36,9 @@ def compare_num():
             break
 compare_num()
 
-
-rand_num = randint(1, 100)
 print('Добро пожаловать в числовую угадайку')
+num = int(input('Введите правую границу для случайного выбора числа:'))
+rand_num = randint(1, num)
 compare_num()
 
 
