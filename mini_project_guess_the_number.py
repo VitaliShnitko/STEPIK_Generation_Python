@@ -35,6 +35,11 @@ def compare_num():
 compare_num()
 
 
+rand_num = randint(1, 100)
+print('Добро пожаловать в числовую угадайку')
+compare_num()
+
+
 
 
 
