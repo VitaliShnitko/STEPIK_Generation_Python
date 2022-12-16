@@ -88,19 +88,51 @@
 # # Вызываем функцию, передавая в аргументы четыре input`а из начала кода.
 # caesar(whats_direction, whats_language, whats_step, whats_text)
 
-s = "Hawnj pk swhg xabkna ukq nqj."
-d = 'abcdefghijklmnopqrstuvwxyz'
-for k in range(25):
-    b = ''
-    for i in range(len(s)):
-        if not s[i].isalpha():
-            b += s[i]
-        else:
-            if s[i].isupper():
-                b += (d[d.find(s[i].lower())-k]).upper()
-            else:
-                b += d[d.find(s[i].lower())-k]
-    print(b)
+# s = "Hawnj pk swhg xabkna ukq nqj."
+# d = 'abcdefghijklmnopqrstuvwxyz'
+# for k in range(25):
+#     b = ''
+#     for i in range(len(s)):
+#         if not s[i].isalpha():
+#             b += s[i]
+#         else:
+#             if s[i].isupper():
+#                 b += (d[d.find(s[i].lower())-k]).upper()
+#             else:
+#                 b += d[d.find(s[i].lower())-k]
+#     print(b)
+
+
+# На вход программе подается строка текста на английском языке,
+# в которой нужно зашифровать все слова.
+# Каждое слово строки следует зашифровать с помощью шифра
+# Цезаря (циклического сдвига на длину этого слова).
+# Строчные буквы при этом остаются строчными, а прописные – прописными.
+
+alphavit_engB = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alphavit_engM = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+
+li = input().split()
+itog = ''
+for i in li:
+   z = 0
+   for j in i:
+       if j.isalpha() == True:
+           z += 1
+   for j in i:
+       mestoB = alphavit_engB.find(j)            #АВЕ, ЦЕЗАРЬ
+       mestoM = alphavit_engM.find(j)
+       new_mestoB = mestoB + z
+       new_mestoM = mestoM + z
+       if j.isalpha() == True:
+           if j == j.upper():
+               itog += alphavit_engB[new_mestoB]
+           elif j == j.lower():
+               itog += alphavit_engM[new_mestoM]
+       else:
+           itog += j
+   itog += ' '
+print(itog)
 
 
 
