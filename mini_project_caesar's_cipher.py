@@ -88,7 +88,19 @@
 # # Вызываем функцию, передавая в аргументы четыре input`а из начала кода.
 # caesar(whats_direction, whats_language, whats_step, whats_text)
 
-
+s = "Hawnj pk swhg xabkna ukq nqj."
+d = 'abcdefghijklmnopqrstuvwxyz'
+for k in range(25):
+    b = ''
+    for i in range(len(s)):
+        if not s[i].isalpha():
+            b += s[i]
+        else:
+            if s[i].isupper():
+                b += (d[d.find(s[i].lower())-k]).upper()
+            else:
+                b += d[d.find(s[i].lower())-k]
+    print(b)
 
 
 
